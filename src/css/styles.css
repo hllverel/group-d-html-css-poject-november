@@ -85,3 +85,13 @@ section ul {
   justify-content: center;
 }
 /* #endregion */
+
+/* #region media queries for tablets */
+@media (min-width: 768px) {
+}
+/* #endregion */
+
+/* #region media queries for desktop */
+@media (min-width: 1280px) {
+}
+/* #endregion */
