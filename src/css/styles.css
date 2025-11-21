@@ -86,6 +86,115 @@ section ul {
 }
 /* #endregion */
 
+/*region footer css by cigdem ergal/mobile*/
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+.footer.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 375px;
+  height: 535px;
+}
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-logo {
+  width: 127px;
+  height: 20px;
+  padding-left: 20px;
+  line-height: 1, 2;
+  letter-spacing: -0.02em;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-phone,
+.footer-address {
+  font-size: 14px;
+  line-height: 1.28;
+  opacity: 0.6;
+}
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-social-lists,
+.footer-menu-list {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: uppercase;
+  opacity: 0.6;
+  transition: opacity 250ms ease;
+}
+.footer-link:hover,
+.footer-link:focus {
+  opacity: 1;
+}
+/*e mail ve go kısmı */
+.footer-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.footer-input {
+  flex: 1;
+  height: 60px;
+  border-radius: 12px;
+  padding: 0 18px;
+  border: none;
+  outline: transparent;
+  background-color: #fff;
+  color: #060707;
+  font-size: 16px;
+}
+.footer-input::placeholder {
+  color: #060707;
+  opacity: 0.6;
+}
+.footer-btn {
+  width: 60px;
+  height: 60px;
+  border: radius 12px;
+  border: none;
+  background-color: #060707;
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+.footer-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-policy-link {
+  font-size: 12px;
+  line-height: 1.33;
+  opacity: 0.6;
+  text-align: right;
+}
+
 /* #region media queries for tablets */
 @media (min-width: 768px) {
 }
