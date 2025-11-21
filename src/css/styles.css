@@ -95,3 +95,96 @@ section ul {
 @media (min-width: 1280px) {
 }
 /* #endregion */
+/* Reviews Section */
+.reviews {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.reviews-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  margin-bottom: 50px;
+}
+
+.reviews-cards {
+  width: 1240px;
+  display: flex;
+  gap: 20px;
+}
+
+.review-card {
+  width: 610px;
+  height: 196px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background: #e0e0e0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+.user-role {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.star-icon {
+  width: 20px;
+  height: 20px;
+}  
+.user-avatar img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
