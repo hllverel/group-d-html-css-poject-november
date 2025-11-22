@@ -90,10 +90,12 @@ section ul {
   justify-content: center;
 }
 /* #endregion */
-
+header{
+  background: var(--black) url('../images/background.png') no-repeat top center;
+}
 .header-border {
   margin: 0 auto;
-  background-color: black;
+  background-color: var(--black);
   width: 335px;
   height: 50px;
   display: flex;
@@ -123,7 +125,7 @@ section ul {
   height: 32px;
   border-radius: 50%;
   padding: 8px;
-  color: #1d1d1d;
+  color: var(--dark-grey);
 }
 
 .menu-wrapper,
@@ -132,7 +134,7 @@ section ul {
 }
 
 .menu-content {
-  background-color: #bea69e;
+  background-color: var(--brown);
   width: 218px;
   height: 812px;
   position: fixed;
@@ -172,7 +174,7 @@ section ul {
 
 .link {
   text-decoration: none;
-  color: #121212;
+  color: var(--black);
   text-transform: uppercase;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
