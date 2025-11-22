@@ -107,6 +107,7 @@ h1 span {
 
 .student-images {
   display: flex;
+  align-items: center;
 }
 
 .student1 {
@@ -233,9 +234,61 @@ h2 span {
 /* #region media queries for tablets */
 @media (min-width: 768px) {
   section {
-    margin: 100px 0px;
-    padding: 0px 32px;
+    margin: 100px 32px;
   }
+
+  /* #region tablet hero */
+  .hero {
+    padding: 64px 32px 0 32px;
+  }
+
+  h1 {
+    max-width: 517px;
+    font-size: 60px;
+    line-height: 1.06667;
+  }
+
+  .hero p {
+    max-width: 418px;
+  }
+
+  .hero-reviews {
+    margin: 40px 0;
+  }
+
+  .happy-students {
+    display: flex;
+  }
+
+  .student-info {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .student-info p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .review-count svg {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+
+  #reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .hero-image img {
+    width: 393px;
+    height: 434px;
+  }
+
+  /* #endregion */
+
   /* #region tablet our-mentors */
   h2 {
     font-size: 48px;
