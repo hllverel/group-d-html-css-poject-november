@@ -5,19 +5,13 @@
   --dark-grey: #1d1d1d;
   --gradient: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
   --font-family: 'DM Sans', sans-serif;
-  --base-font-size: 16px;
+  --base-font-size: 14px;
   --base-font-weight: 400;
-  --base-line-height: 1.25;
+  --base-line-height: 1.28571;
   --base-letter-spacing: -0.02em;
 }
 
 /* #region general */
-ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding-left: 0;
-}
-
 body {
   font-family: var(--font-family);
   letter-spacing: var(--base-letter-spacing);
@@ -43,10 +37,12 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: 48px;
-  line-height: 1.125;
+  font-size: 28px;
+  line-height: 1.14286;
   letter-spacing: -0.04em;
   color: var(--white);
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
@@ -69,12 +65,13 @@ p {
 }
 
 ul {
-  margin: 0;
+  list-style-type: none;
+  margin: 0 auto;
   padding: 0;
 }
 
 section {
-  margin: 0;
+  margin: 80px 0px;
   padding: 20px;
 }
 
@@ -86,12 +83,107 @@ section ul {
 }
 /* #endregion */
 
+/* #region our-mentors */
+h2 {
+  margin-bottom: 40px;
+}
+
+h2 span {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+  color: var(--brown);
+}
+
+.mentor-cards {
+  gap: 40px;
+}
+
+.mentor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 185px;
+  height: 240px;
+}
+
+.mentor-card img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 16px;
+}
+
+.mentor-card h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.mentor-card p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* #endregion */
+
 /* #region media queries for tablets */
 @media (min-width: 768px) {
+  section {
+    margin: 100px 0px;
+    padding: 0px 32px;
+  }
+  /* #region tablet our-mentors */
+  h2 {
+    font-size: 48px;
+    line-height: 1.125;
+    margin-bottom: 50px;
+  }
+
+  h2 span {
+    font-size: 48px;
+    line-height: 1.125;
+  }
+
+  .mentor-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 488px;
+    gap: 93px 100px;
+  }
+
+  .mentor-card {
+    width: 194px;
+    height: 250px;
+    flex-basis: calc((100% - 100px) / 2);
+  }
+
+  .mentor-card h3 {
+    font-size: 28px;
+    line-height: 1.14286;
+    margin-bottom: 4px;
+  }
+  /* #endregion */
 }
 /* #endregion */
 
 /* #region media queries for desktop */
 @media (min-width: 1280px) {
+  section {
+    margin: 150px 0px;
+    padding: 0px 100px;
+  }
+  /* #region desktop our-mentors */
+  .mentor-cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 99px;
+    max-width: 1034px;
+  }
+
+  .mentor-card {
+    max-width: 189px;
+    flex-basis: initial;
+  }
+  /* #endregion */
 }
 /* #endregion */
