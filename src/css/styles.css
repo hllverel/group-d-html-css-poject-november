@@ -270,13 +270,6 @@ section ul {
     transform: translateY(-4px);
     border-color: var(--brown);
   }
-}
-
-/* Desktop - 3 columns 1440px */
-@media (min-width: 1440px) {
-  .courses-section {
-    margin: 80px auto;
-  }
 
   .section-header p {
     font-weight: 400;
@@ -285,5 +278,6 @@ section ul {
     letter-spacing: -0.02em;
     color: #fff;
     max-width: 565px;
+    margin-left: 360px;
   }
 }
