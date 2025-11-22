@@ -206,20 +206,20 @@ header{
       padding: 16px 58px;
       width: 186px;
       height: 60px;
-      background-color: #fff;
+      background-color: var(--white);
       text-transform: uppercase;
       font-family: "DM Sans", sans-serif;
       font-weight: 700;
       font-size: 18px;
       line-height: 1.55556;
-      color: #121212;
+      color: var(--black);
       white-space: nowrap;
     }
   
     .signup-button:active,
     .signup-button:hover {
-      background-color: #1d1d1d;
-      color: #bea69e;
+      background-color: var(--dark-grey);
+      color: var(--brown);
     }
   
     header {
@@ -258,7 +258,6 @@ header{
 @media (min-width: 1280px) {
   .header-border {
     width: calc(822px + (100vw - 1280px) * 0.5);
-      /* 1280px=822px, 1440px≈922px */
       max-width: 982px;
       padding: 21px 49px;
       margin-right: 20px;
@@ -293,7 +292,7 @@ header{
   
     .menu-content {
       flex-direction: row;
-      background-color: black;
+      background-color: var(--black);
       height: auto;
       width: 502px;
       justify-content: center;
@@ -310,15 +309,16 @@ header{
     }
     
     .link {
-      color: #fff;
+      color: var(--white);
     }
   
     .link:active,
     .link:hover {
-      color: #bea69e;
+      color: var(--brown);
     }
   
     .signup-button {
+      width: calc(238px + (100vw - 1280px) * 0.00625);
       min-width: 238px;
       max-width: 239px;
       padding: 16px 84px;
