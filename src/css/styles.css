@@ -93,10 +93,13 @@ section ul {
 header{
   background: var(--black) url('../images/background.png') no-repeat top center;
 }
+
 .header-border {
   margin: 0 auto;
   background-color: var(--black);
   width: 335px;
+  width: 100%;
+  max-width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -254,9 +257,12 @@ header{
 /* #region media queries for desktop */
 @media (min-width: 1280px) {
   .header-border {
-      width: 822px;
+    width: calc(822px + (100vw - 1280px) * 0.5);
+      /* 1280px=822px, 1440px≈922px */
+      max-width: 982px;
       padding: 21px 49px;
       margin-right: 20px;
+      box-sizing: border-box;
     }
   
     header {
@@ -278,15 +284,17 @@ header{
   
     .menu-wrapper {
       display: flex;
+      justify-content: center;
+      align-items: center;
       z-index: 0;
       height: 60px;
-      background-color: inherit;
+      background-color: transparent;
     }
   
     .menu-content {
       flex-direction: row;
       background-color: black;
-      height: 60px;
+      height: auto;
       width: 502px;
       justify-content: center;
       align-items: center;
@@ -300,7 +308,7 @@ header{
       padding: 0;
       white-space: nowrap;
     }
-  
+    
     .link {
       color: #fff;
     }
@@ -311,18 +319,11 @@ header{
     }
   
     .signup-button {
-      width: 238px;
+      min-width: 238px;
+      max-width: 239px;
       padding: 16px 84px;
       white-space: nowrap;
     }
 }
-@media (min-width: 1440px) {
-  .header-border {
-    width: 982px;
-  }
 
-  .signup-button {
-    width: 239px;
-  }
-}
 /* #endregion */
