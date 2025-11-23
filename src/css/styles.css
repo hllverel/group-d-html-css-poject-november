@@ -191,7 +191,6 @@ h1 span {
 /* #region our-courses*/
 .courses-section {
   max-width: 1240px;
-  margin: 40px 0px;
 }
 
 .section-header {
@@ -199,24 +198,7 @@ h1 span {
 }
 
 .section-header h2 {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 114%;
-  letter-spacing: -0.04em;
-  color: #fff;
-}
-
-.section-header h2 span {
-  color: #bea69e;
-}
-
-.section-header p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 129%;
-  letter-spacing: -0.02em;
-  color: #fff;
+  margin-bottom: 20px;
 }
 
 .courses-grid {
@@ -278,20 +260,11 @@ h1 span {
 }
 
 .course-title {
-  font-weight: 600;
   max-width: 210px;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 114%;
-  color: #fff;
 }
 
 .course-description {
   margin-top: auto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 125%;
-  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.5);
 }
 /* #endregion */
@@ -411,12 +384,9 @@ h2 span {
   .hero-image-desktop {
     display: none;
   }
-  
-  /* #region tablet our-courses */
-    .courses-section {
-    margin: 60px 10px;
-  }
+  /* #endregion */
 
+  /* #region tablet our-courses */
   .course-icon {
     position: absolute;
     top: 30px;
@@ -433,17 +403,10 @@ h2 span {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
-  }
-
-  .section-header h2 {
-    flex-shrink: 0;
-    min-width: 200px;
-    font-size: 48px;
   }
 
   .section-header p {
-    max-width: 405px;
+    max-width: 381px;
     font-size: 16px;
   }
 
@@ -460,7 +423,7 @@ h2 span {
     font-size: 16px;
   }
   /* #endregion */
-  
+
   /* #region tablet our-mentors */
   h2 {
     font-size: 48px;
@@ -493,8 +456,9 @@ h2 span {
   }
   /* #endregion */
 }
+/* #endregion */
 
-/* Desktop - 3 columns */
+/* #region media queries for desktop */
 @media (min-width: 1280px) {
   section {
     margin: 150px 100px;
@@ -538,10 +502,6 @@ h2 span {
   /* #endregion */
 
   /* #region desktop our-courses */
-   .courses-section {
-    margin: 80px 100px;
-  }
-
   .courses-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -561,13 +521,8 @@ h2 span {
   }
 
   .section-header p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.02em;
-    color: #fff;
     max-width: 565px;
-    margin-left: 360px;
+    margin-left: 410px;
   }
   /* #endregion */
 
