@@ -352,6 +352,7 @@ h2 span {
   .hero {
     padding: 80px 50px 0 50px;
     display: flex;
+    gap: clamp(20px, calc(-860px + 68.75vw), 130px);
   }
 
   h1 {
@@ -371,6 +372,7 @@ h2 span {
   .hero-image {
     width: 397px;
     height: 520px;
+    margin: initial;
   }
 
   .hero-image-desktop {
