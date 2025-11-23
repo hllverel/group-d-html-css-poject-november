@@ -82,7 +82,8 @@ section ul {
 }
 
 /* #region header */
-header {
+header{
+  padding: 20px;
   background: var(--black) url('../images/background.png') no-repeat top center;
 }
 
@@ -91,7 +92,7 @@ header {
   background-color: var(--black);
   width: 335px;
   width: 100%;
-  max-width: 100%;
+
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -184,7 +185,7 @@ header {
 
 /* #region hero-image */
 .hero {
-  background: var(--dark-grey);
+  background-color: var(--dark-grey);
   border-radius: 30px;
   padding: 40px 20px 0 20px;
 }
@@ -458,7 +459,8 @@ h2 span {
   }
 
   .header-border {
-    width: 504px;
+    width: calc(504px + (100vw - 768px) * 1);;
+    min-width: 504px;
     height: 60px;
     margin: 0 14px 0 0;
   }
@@ -631,7 +633,7 @@ h2 span {
 
   /* #region desktop header */
     .header-border {
-    width: calc(822px + (100vw - 1280px) * 0.5);
+    width: calc(822px + (100vw - 1280px) * 1);
     max-width: 982px;
     padding: 21px 49px;
     margin-right: 20px;
