@@ -27,8 +27,8 @@ body {
 
 h1 {
   font-weight: 500;
-  font-size: 60px;
-  line-height: 1.06667;
+  font-size: 40px;
+  line-height: 1.1;
   letter-spacing: -0.04em;
   color: var(--white);
   margin: 0;
@@ -71,8 +71,7 @@ ul {
 }
 
 section {
-  margin: 80px 0px;
-  padding: 20px;
+  margin: 80px 20px;
 }
 
 section ul {
@@ -80,6 +79,113 @@ section ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+/* #endregion */
+
+/* #region hero-image */
+.hero {
+  background: var(--dark-grey);
+  border-radius: 30px;
+  padding: 40px 20px 0 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h1 span {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brown);
+}
+
+.hero-reviews {
+  display: flex;
+  gap: 16px;
+  margin: 40px 0 31px 0;
+}
+
+.student-images {
+  display: flex;
+  align-items: center;
+}
+
+.student1 {
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+}
+
+.student2 {
+  position: relative;
+  left: -12px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+}
+
+.student3 {
+  position: relative;
+  left: -24px;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+}
+
+.student-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  max-width: 89px;
+  text-decoration: none;
+}
+
+.student-info p {
+  letter-spacing: -0.04em;
+}
+
+.review-count {
+  display: flex;
+  gap: 12px;
+}
+
+.review-count svg {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background-color: var(--brown);
+  fill: var(--brown);
+  stroke: black;
+  border-radius: 100px;
+}
+
+#reviews-text {
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+
+#review-number {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 259px;
+  height: 314px;
+}
+
+.hero-image-tablet,
+.hero-image-desktop {
+  display: none;
 }
 /* #endregion */
 
@@ -129,9 +235,78 @@ h2 span {
 /* #region media queries for tablets */
 @media (min-width: 768px) {
   section {
-    margin: 100px 0px;
-    padding: 0px 32px;
+    margin: 100px 32px;
   }
+
+  /* #region tablet hero */
+  .hero {
+    padding: 64px 32px 0 32px;
+  }
+
+  h1 {
+    max-width: 517px;
+    font-size: 60px;
+    line-height: 1.06667;
+  }
+
+  .hero p {
+    max-width: 418px;
+  }
+
+  .hero-reviews {
+    margin: 40px 0;
+  }
+
+  .happy-students {
+    display: flex;
+  }
+
+  .student1,
+  .student2,
+  .student3 {
+    width: 54px;
+    height: 54px;
+  }
+
+  .student-info {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+
+  .student-info p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .review-count svg {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+
+  #reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .hero-image {
+    width: 393px;
+    height: 434px;
+  }
+
+  .hero-image-tablet {
+    display: initial;
+  }
+
+  .hero-image-mobile,
+  .hero-image-desktop {
+    display: none;
+  }
+
+  /* #endregion */
+
   /* #region tablet our-mentors */
   h2 {
     font-size: 48px;
@@ -169,9 +344,46 @@ h2 span {
 /* #region media queries for desktop */
 @media (min-width: 1280px) {
   section {
-    margin: 150px 0px;
-    padding: 0px 100px;
+    margin: 150px 100px;
   }
+
+  /* #region desktop hero */
+  .hero {
+    padding: 80px 50px 0 50px;
+    display: flex;
+    gap: clamp(20px, calc(-860px + 68.75vw), 130px);
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 1.0625;
+    max-width: 563px;
+  }
+
+  .hero-reviews {
+    margin: 136px 0 0 0;
+  }
+
+  .student-info {
+    gap: 8px;
+  }
+
+  .hero-image {
+    width: 397px;
+    height: 520px;
+    margin: initial;
+  }
+
+  .hero-image-desktop {
+    display: initial;
+  }
+
+  .hero-image-mobile,
+  .hero-image-tablet {
+    display: none;
+  }
+  /* #endregion */
+
   /* #region desktop our-mentors */
   .mentor-cards {
     flex-direction: row;
