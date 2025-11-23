@@ -80,9 +80,10 @@ section ul {
   align-items: center;
   justify-content: center;
 }
+/* #endregion */
 
 /* #region header */
-header{
+header {
   padding: 20px;
   background: var(--black) url('../images/background.png') no-repeat top center;
 }
@@ -183,11 +184,17 @@ header{
 }
 /* #endregion */
 
-/* #region hero-image */
+/* #region hero */
+.hero-bg {
+  background: url('../images/background.png') repeat top center;
+  padding: 20px 20px 80px 20px;
+}
+
 .hero {
   background-color: var(--dark-grey);
   border-radius: 30px;
   padding: 40px 20px 0 20px;
+  margin: 0;
 }
 
 h1 {
@@ -421,7 +428,7 @@ h2 span {
   }
 
   /* #region tablet header */
-    .header-container {
+  .header-container {
     margin: 0 auto;
     display: flex;
   }
@@ -459,7 +466,7 @@ h2 span {
   }
 
   .header-border {
-    width: calc(504px + (100vw - 768px) * 1);;
+    width: calc(504px + (100vw - 768px) * 1);
     min-width: 504px;
     height: 60px;
     margin: 0 14px 0 0;
@@ -484,8 +491,12 @@ h2 span {
     margin-bottom: 114px;
   }
   /* #endregion */
-  
+
   /* #region tablet hero */
+  .hero-bg {
+    padding: 40px 32px 100px 32px;
+  }
+
   .hero {
     padding: 64px 32px 0 32px;
   }
@@ -502,6 +513,7 @@ h2 span {
 
   .hero-reviews {
     margin: 40px 0;
+    gap: 40px;
   }
 
   .happy-students {
@@ -632,7 +644,7 @@ h2 span {
   }
 
   /* #region desktop header */
-    .header-border {
+  .header-border {
     width: calc(822px + (100vw - 1280px) * 1);
     max-width: 982px;
     padding: 21px 49px;
@@ -700,8 +712,12 @@ h2 span {
     white-space: nowrap;
   }
   /* #endregion */
-  
+
   /* #region desktop hero */
+  .hero-bg {
+    padding: 80px 100px 150px 100px;
+  }
+
   .hero {
     padding: 80px 50px 0 50px;
     display: flex;
