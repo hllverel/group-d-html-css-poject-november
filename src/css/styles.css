@@ -139,15 +139,11 @@ h1 span {
   gap: 4px;
   margin-top: 4px;
   max-width: 89px;
+  text-decoration: none;
 }
 
 .student-info p {
   letter-spacing: -0.04em;
-}
-
-.student-info svg {
-  width: 18px;
-  height: 9px;
 }
 
 .review-count {
@@ -160,6 +156,8 @@ h1 span {
   height: 44px;
   padding: 12px;
   background-color: var(--brown);
+  fill: var(--brown);
+  stroke: black;
   border-radius: 100px;
 }
 
@@ -180,11 +178,14 @@ h1 span {
 .hero-image {
   display: flex;
   justify-content: center;
-}
-
-.hero-image img {
+  margin: auto;
   width: 259px;
   height: 314px;
+}
+
+.hero-image-tablet,
+.hero-image-desktop {
+  display: none;
 }
 /* #endregion */
 
@@ -260,9 +261,17 @@ h2 span {
     display: flex;
   }
 
+  .student1,
+  .student2,
+  .student3 {
+    width: 54px;
+    height: 54px;
+  }
+
   .student-info {
     flex-direction: column;
     margin-top: 0;
+    align-items: flex-start;
   }
 
   .student-info p {
@@ -282,9 +291,18 @@ h2 span {
     margin-bottom: 8px;
   }
 
-  .hero-image img {
+  .hero-image {
     width: 393px;
     height: 434px;
+  }
+
+  .hero-image-tablet {
+    display: initial;
+  }
+
+  .hero-image-mobile,
+  .hero-image-desktop {
+    display: none;
   }
 
   /* #endregion */
@@ -326,9 +344,45 @@ h2 span {
 /* #region media queries for desktop */
 @media (min-width: 1280px) {
   section {
-    margin: 150px 0px;
+    margin: 150px 100px;
     padding: 0px 100px;
   }
+
+  /* #region desktop hero */
+  .hero {
+    padding: 80px 50px 0 50px;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 1.0625;
+    max-width: 563px;
+  }
+
+  .hero-reviews {
+    margin: 136px 0 0 0;
+  }
+
+  .student-info {
+    gap: 8px;
+  }
+
+  .hero-image {
+    width: 397px;
+    height: 520px;
+  }
+
+  .hero-image-desktop {
+    display: initial;
+  }
+
+  .hero-image-mobile,
+  .hero-image-tablet {
+    display: none;
+  }
+  /* #endregion */
+
   /* #region desktop our-mentors */
   .mentor-cards {
     flex-direction: row;
