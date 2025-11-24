@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+pullrequest-list.txt
+src/images/icomoon
+src/images/symbol-defs.working.svg
