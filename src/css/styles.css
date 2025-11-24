@@ -224,22 +224,27 @@ section ul {
 }
 /* #endregion */
 
-/* #region media queries for desktop */
+/* #region media queries for desktop 1280px */
 @media (min-width: 1280px) {
   .container {
     padding: 0 15px;
-    max-width: 1240px;
+    max-width: 1080px;
+  }
+  
+  .reviews {
+    padding: 50px 0;
   }
   
   .reviews-cards {
     flex-direction: row;
     gap: 20px;
-    width: 1240px;
-    height: 196px;
+    width: 1080px;
+    height: 320px;
+    opacity: 1;
   }
   
   .review-card {
-    width: 610px;
+    width: 530px;
     height: 196px;
   }
   
@@ -248,10 +253,22 @@ section ul {
     display: block;
   }
 }
+/* #endregion */
 
+/* #region media queries for desktop 1440px */
 @media (min-width: 1440px) {
   .container {
     max-width: 1240px;
+  }
+  
+  .reviews-cards {
+    width: 1240px;
+    height: 196px;
+  }
+  
+  .review-card {
+    width: 610px;
+    height: 196px;
   }
 }
 /* #endregion */
