@@ -1,9 +1,176 @@
-.container {
-  margin: 0 auto;
-  width: 375px;
-  box-sizing: border-box;
+.container {margin: 0 auto;
+width: 375px;
+box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {padding: 0;
+margin: 0;
+}
+
+.singup {width: 335px;
+height: 523px;
+padding-left:20px;
+padding-right: 20px;
+background-color: rgba(18, 18, 18, 1);
+
+}
+.singuph3A {background-color: rgba(18, 18, 18, 1);
+}
+
+.singuph3 {font-family: DM Sans;
+color: rgba(255, 255, 255, 1);
+font-style: normal; 
+font-weight: 500;
+font-size: 28px;
+height: 1.14px;
+letter-spacing: -0.04em;
+width: 93px;
+}
+
+.singuph3 span {color: rgba(190, 166, 158, 1);
+}
+
+.singupp {font-family: DM sans;
+color:rgba(255, 255, 255, 1);
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.02em;
+padding-top: 52px;
+padding-right: 40px;
+height: 54px;
+background-color: rgba(18, 18, 18, 1);
+}
+.singupform {background-color: rgba(18, 18, 18, 1);
+}
+.singupnameA {padding-top: 41px;
+    
+}   
+
+
+.singupname input[type="text"]::placeholder {font-family: DM Sans;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.0em;
+color: rgba(255, 255, 255, 1);
+opacity: 0.70;
+
+}
+
+
+.singupname input[type="text"] {box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.2);
+width: 335px;
+height: 46px;
+border-radius: 12px;
+background-color: rgba(18, 18, 18, 1);
+outline: none;
+color: rgba(255, 255, 255, 1);
+padding-left: 18px;
+font-size: 16px;
+line-height: 20px;
+}
+
+.singupemailA {padding-top: 8px;
+}   
+
+.singupemail input[type="email"]::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.70;
+   
+}
+
+
+.singupemail input[type="email"] {    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 335px;
+    height: 46px;
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+        font-size: 16px;
+        line-height: 20px;
+}
+
+.textarea {padding-top: 8px;
+    width: 335px;
+    height: 112px;
+}
+
+.singuptextarea {width: 335px;
+    height: 112px;
+    background-color: rgba(18, 18, 18, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 14px;
+}
+
+textarea::placeholder {font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.70;
+    
+}
+
+.singupsend {padding-top: 40px;
+    width: 335px;
+}
+
+.singupbutton {width: 335px;
+box-sizing: border-box;
+height: 48px;  
+border-radius: 12px;
+background-color: rgba(255, 255, 255, 1);
+ font-weight: 700;
+font-size: 16px;
+color:rgba(18, 18, 18, 1);
+text-align: center;
+outline: none;
+}
+.singupsonp1 {width: 335px;
+    height: 48px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.singupsonp {font-family: DM Sans;
+    font-weight: 400;
+    font-size: 12px;
+    height: 16px;
+    letter-spacing: 0.00em;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.singupsonp span {text-decoration: underline;
+}
+.resimler {
+             display: none;
+        }
+
+@media (min-width: 768px) and (max-width: 1280px) {
+.container {width: 768px;   
+    margin: 0 auto;
+        box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -12,227 +179,21 @@ h5,
 h6,
 p,
 ul {
-  padding: 0;
-  margin: 0;
-}
-
-.singup {
-  width: 335px;
-  height: 523px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: rgba(18, 18, 18, 1);
-
-}
-
-.singuph3A {
-  background-color: rgba(18, 18, 18, 1);
-}
-
-.singuph3 {
-  font-family: DM Sans;
-  color: rgba(255, 255, 255, 1);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  height: 1.14px;
-  letter-spacing: -0.04em;
-  width: 93px;
-}
-
-.singuph3 span {
-  color: rgba(190, 166, 158, 1);
-}
-
-.singupp {
-  font-family: DM sans;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.02em;
-  padding-top: 52px;
-  padding-right: 40px;
-  height: 54px;
-  background-color: rgba(18, 18, 18, 1);
-}
-
-.singupform {
-  background-color: rgba(18, 18, 18, 1);
-}
-
-.singupnameA {
-  padding-top: 41px;
-
-}
-
-
-.singupname input[type="text"]::placeholder {
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0em;
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.70;
-
-}
-
-
-.singupname input[type="text"] {
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 335px;
-  height: 46px;
-  border-radius: 12px;
-  background-color: rgba(18, 18, 18, 1);
-  outline: none;
-  color: rgba(255, 255, 255, 1);
-  padding-left: 18px;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.singupemailA {
-  padding-top: 8px;
-}
-
-.singupemail input[type="email"]::placeholder {
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0em;
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.70;
-
-}
-
-
-.singupemail input[type="email"] {
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 335px;
-  height: 46px;
-  border-radius: 12px;
-  background-color: rgba(18, 18, 18, 1);
-  outline: none;
-  color: rgba(255, 255, 255, 1);
-  padding-left: 18px;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.textarea {
-  padding-top: 8px;
-  width: 335px;
-  height: 112px;
-}
-
-.singuptextarea {
-  width: 335px;
-  height: 112px;
-  background-color: rgba(18, 18, 18, 1);
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  outline: none;
-  border-radius: 12px;
-  resize: none;
-  outline: none;
-  color: rgba(255, 255, 255, 1);
-  padding-left: 18px;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 14px;
-}
-
-textarea::placeholder {
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0em;
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.70;
-
-}
-
-.singupsend {
-  padding-top: 40px;
-  width: 335px;
-}
-
-.singupbutton {
-  width: 335px;
-  box-sizing: border-box;
-  height: 48px;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 1);
-  font-weight: 700;
-  font-size: 16px;
-  color: rgba(18, 18, 18, 1);
-  text-align: center;
-  outline: none;
-}
-
-.singupsonp1 {
-  width: 335px;
-  height: 48px;
-  padding-top: 20px;
-  box-sizing: border-box;
-}
-
-.singupsonp {
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 12px;
-  height: 16px;
-  letter-spacing: 0.00em;
-  color: rgba(255, 255, 255, 0.5);
-
-}
-
-.singupsonp span {
-  text-decoration: underline;
-}
-
-.resimler {
-  display: none;
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
     padding: 0;
     margin: 0;
-  }
-
-  .singup {
+}
+.singup {
     width: 480px;
     height: 577px;
     padding-left: 32px;
     padding-right: 256px;
     background-color: rgba(18, 18, 18, 1);
 
-  }
-
-  .singuph3A {
+}
+.singuph3A {
     background-color: rgba(18, 18, 18, 1);
-  }
-
-  .singuph3 {
+}
+.singuph3 {
     font-family: DM Sans;
     color: rgba(255, 255, 255, 1);
     font-style: normal;
@@ -241,14 +202,13 @@ textarea::placeholder {
     line-height: 54px;
     letter-spacing: -0.04em;
     width: 159px;
-  }
+}
 
-  .singuph3 span {
+.singuph3 span {
     color: rgba(190, 166, 158, 1);
-  }
+}
 
-  .singupp {
-    width: 480px;
+.singupp {width: 480px;
     height: 40px;
     font-family: DM sans;
     color: rgba(255, 255, 255, 1);
@@ -259,18 +219,16 @@ textarea::placeholder {
     padding-top: 74px;
     padding-right: 256px;
     background-color: rgba(18, 18, 18, 1);
-  }
-
-  .singupform {
+}
+.singupform {
     background-color: rgba(18, 18, 18, 1);
-  }
+}
 
-  .singupnameA {
+.singupnameA {
     padding-top: 40px;
 
-  }
-
-  .singupname input[type="text"]::placeholder {
+}
+.singupname input[type="text"]::placeholder {
     font-family: DM Sans;
     font-weight: 400;
     font-size: 16px;
@@ -279,10 +237,10 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 1);
     opacity: 0.70;
 
-  }
+}
 
 
-  .singupname input[type="text"] {
+.singupname input[type="text"] {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
     width: 480px;
@@ -294,13 +252,13 @@ textarea::placeholder {
     padding-left: 18px;
     font-size: 16px;
     line-height: 20px;
-  }
+}
 
-  .singupemailA {
+.singupemailA {
     padding-top: 14px;
-  }
+}
 
-  .singupemail input[type="email"]::placeholder {
+.singupemail input[type="email"]::placeholder {
     font-family: DM Sans;
     font-weight: 400;
     font-size: 16px;
@@ -309,9 +267,9 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 1);
     opacity: 0.70;
 
-  }
+}
 
-  .singupemail input[type="email"] {
+.singupemail input[type="email"] {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
     width: 480px;
@@ -323,15 +281,14 @@ textarea::placeholder {
     padding-left: 18px;
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .textarea {
+}
+.textarea {
     padding-top: 14px;
     width: 480px;
     height: 119px;
-  }
+}
 
-  .singuptextarea {
+.singuptextarea {
     width: 480px;
     height: 119px;
     background-color: rgba(18, 18, 18, 1);
@@ -346,9 +303,9 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 20px;
     padding-top: 14px;
-  }
+}
 
-  textarea::placeholder {
+textarea::placeholder {
     font-family: DM Sans;
     font-weight: 400;
     font-size: 16px;
@@ -357,14 +314,14 @@ textarea::placeholder {
     color: rgba(255, 255, 255, 1);
     opacity: 0.70;
 
-  }
+}
 
-  .singupsend {
+.singupsend {
     padding-top: 40px;
     width: 479px;
-  }
+}
 
-  .singupbutton {
+.singupbutton {
     width: 479px;
     box-sizing: border-box;
     height: 60px;
@@ -375,17 +332,16 @@ textarea::placeholder {
     color: rgba(18, 18, 18, 1);
     text-align: center;
     outline: none;
-  }
+}
 
-  .singupsonp1 {
+.singupsonp1 {
     width: 480px;
     height: 36px;
     padding-top: 20.71px;
     box-sizing: border-box;
-  }
+}
 
-  .singupsonp {
-    width: 480px;
+.singupsonp {width: 480px;
     height: 36px;
     font-family: DM Sans;
     font-weight: 400;
@@ -394,348 +350,250 @@ textarea::placeholder {
     letter-spacing: 0.00em;
     color: rgba(255, 255, 255, 0.5);
 
-  }
+}
 
-  .singupsonp span {
+.singupsonp span {
     text-decoration: underline;
-  }
-
-  .resimler {
-    display: none;
-  }
+}
+.resimler {display: none;}
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
-  .container {
-    width: 1280px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul {
-    padding: 0;
-    margin: 0;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+        .singup {display: flex;
+            width: 1080px;
+            height: 578px;
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: rgba(18, 18, 18, 1);
+    
+        }
+        .singupa {width: 480px;
+        height: 578px;
+        }
+    
+        .singuph3A {
+            background-color: rgba(18, 18, 18, 1);
+        }
+    
+        .singuph3 {
+            font-family: DM Sans;
+            color: rgba(255, 255, 255, 1);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 54px;
+            letter-spacing: -0.04em;
+            width: 159px;
+        }
+    
+        .singuph3 span {
+            color: rgba(190, 166, 158, 1);
+        }
+    
+        .singupp {
+            width: 480px;
+            height: 40px;
+            font-family: DM sans;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            padding-top: 74px;
+            padding-right: 256px;
+            background-color: rgba(18, 18, 18, 1);
+        }
+    
+        .singupform {
+            background-color: rgba(18, 18, 18, 1);
+        }
+    
+        .singupnameA {
+            padding-top: 40px;
+    
+        }
+    
+        .singupname input[type="text"]::placeholder {
+            font-family: DM Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.0em;
+            color: rgba(255, 255, 255, 1);
+            opacity: 0.70;
+    
+        }
+    
+    
+        .singupname input[type="text"] {
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 480px;
+            height: 60px;
+            border-radius: 12px;
+            background-color: rgba(18, 18, 18, 1);
+            outline: none;
+            color: rgba(255, 255, 255, 1);
+            padding-left: 18px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        .singupemailA {
+            padding-top: 14px;
+        }
+    
+        .singupemail input[type="email"]::placeholder {
+            font-family: DM Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.0em;
+            color: rgba(255, 255, 255, 1);
+            opacity: 0.70;
+    
+        }
+    
+        .singupemail input[type="email"] {
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 480px;
+            height: 60px;
+            border-radius: 12px;
+            background-color: rgba(18, 18, 18, 1);
+            outline: none;
+            color: rgba(255, 255, 255, 1);
+            padding-left: 18px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        .textarea {
+            padding-top: 14px;
+            width: 480px;
+            height: 120px;
+        }
+    
+        .singuptextarea {
+            width: 480px;
+            height: 120px;
+            background-color: rgba(18, 18, 18, 1);
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            outline: none;
+            border-radius: 12px;
+            resize: none;
+            outline: none;
+            color: rgba(255, 255, 255, 1);
+            padding-left: 18px; 
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 20.55px;
+        }
+    
+        textarea::placeholder {
+            font-family: DM Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.0em;
+            color: rgba(255, 255, 255, 1);
+            opacity: 0.70;
+    
+        }
+    
+        .singupsend {
+            padding-top: 40px;
+            width: 479px;
+        }
+    
+        .singupbutton {
+            width: 479px;
+            box-sizing: border-box;
+            height: 60px;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 1);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            color: rgba(18, 18, 18, 1);
+            text-align: center;
+            outline: none;
+        }
+    
+        .singupsonp1 {
+            width: 480px;
+            height: 36px;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+    
+        .singupsonp {
+            width: 480px;
+            height: 36px;
+            font-family: DM Sans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.00em;
+            color: rgba(255, 255, 255, 0.5);
+    
+        }
+    
+        .singupsonp span {
+            text-decoration: underline;
+        }
+    
+     .resimler {
+             display: flex;
+             padding-left: 60px;
+             padding-bottom: 38px;
+             width: 540px;
+             height: 540px;
+             gap: 20px;
+        }
 
-  .singup {
-    display: flex;
-    width: 1080px;
-    height: 578px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: rgba(18, 18, 18, 1);
+        .ilkjpg {
+            width: 180px;
+                height: 288px;
+            border-radius: 1000px;
+            background-color: rgba(190, 166, 158, 1); 
+            justify-content: center;
+        }
+        .ilkjpg img {
+                padding-top: 76px;
+                padding-right: 19px;
+                max-width: 100%;
+                        }
+        .ikincijpg {width: 340px;
+            height: 540px;
+            display: flex;
+            border-radius: 1000px;
+                background-color: rgba(29, 29, 29, 1);
+        }
+        .ikincijpg img {
+            max-width: 100%;
+            padding-top: 156px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 88px;
+        }
+    }
 
-  }
-
-  .singupa {
-    width: 480px;
-    height: 578px;
-  }
-
-  .singuph3A {
-    background-color: rgba(18, 18, 18, 1);
-  }
-
-  .singuph3 {
-    font-family: DM Sans;
-    color: rgba(255, 255, 255, 1);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 54px;
-    letter-spacing: -0.04em;
-    width: 159px;
-  }
-
-  .singuph3 span {
-    color: rgba(190, 166, 158, 1);
-  }
-
-  .singupp {
-    width: 480px;
-    height: 40px;
-    font-family: DM sans;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.02em;
-    padding-top: 74px;
-    padding-right: 256px;
-    background-color: rgba(18, 18, 18, 1);
-  }
-
-  .singupform {
-    background-color: rgba(18, 18, 18, 1);
-  }
-
-  .singupnameA {
-    padding-top: 40px;
-
-  }
-
-  .singupname input[type="text"]::placeholder {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.0em;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0.70;
-
-  }
-
-
-  .singupname input[type="text"] {
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 480px;
-    height: 60px;
-    border-radius: 12px;
-    background-color: rgba(18, 18, 18, 1);
-    outline: none;
-    color: rgba(255, 255, 255, 1);
-    padding-left: 18px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .singupemailA {
-    padding-top: 14px;
-  }
-
-  .singupemail input[type="email"]::placeholder {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.0em;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0.70;
-
-  }
-
-  .singupemail input[type="email"] {
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 480px;
-    height: 60px;
-    border-radius: 12px;
-    background-color: rgba(18, 18, 18, 1);
-    outline: none;
-    color: rgba(255, 255, 255, 1);
-    padding-left: 18px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .textarea {
-    padding-top: 14px;
-    width: 480px;
-    height: 120px;
-  }
-
-  .singuptextarea {
-    width: 480px;
-    height: 120px;
-    background-color: rgba(18, 18, 18, 1);
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    outline: none;
-    border-radius: 12px;
-    resize: none;
-    outline: none;
-    color: rgba(255, 255, 255, 1);
-    padding-left: 18px;
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 20.55px;
-  }
-
-  textarea::placeholder {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.0em;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0.70;
-
-  }
-
-  .singupsend {
-    padding-top: 40px;
-    width: 479px;
-  }
-
-  .singupbutton {
-    width: 479px;
-    box-sizing: border-box;
-    height: 60px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 1);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: rgba(18, 18, 18, 1);
-    text-align: center;
-    outline: none;
-  }
-
-  .singupsonp1 {
-    width: 480px;
-    height: 36px;
-    padding-top: 20px;
-    box-sizing: border-box;
-  }
-
-  .singupsonp {
-    width: 480px;
-    height: 36px;
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.00em;
-    color: rgba(255, 255, 255, 0.5);
-
-  }
-
-  .singupsonp span {
-    text-decoration: underline;
-  }
-
-  .resimler {
-    display: flex;
-    padding-left: 60px;
-    padding-bottom: 38px;
-    width: 540px;
-    height: 540px;
-    gap: 20px;
-  }
-
-  .ilkjpg {}
-
-  .ilkjpg img {}
-
-  .ikincijpg {}
-
-  .ikincijpg img {}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*:root {
-  --black: #121212;
-  --white: #fff;
-  --brown: #bea69e;
-  --dark-grey: #1d1d1d;
-  --gradient: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
-  --font-family: 'DM Sans', sans-serif;
-  --base-font-size: 16px;
-  --base-font-weight: 400;
-  --base-line-height: 1.25;
-  --base-letter-spacing: -0.02em;
-}
-
-/* #region general */
-/*ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding-left: 0;
-}
-
-body {
-  font-family: var(--font-family);
-  letter-spacing: var(--base-letter-spacing);
-  background-color: var(--black);
-  color: var(--white);
-}
-
-.container {
-  min-width: 320px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 1.06667;
-  letter-spacing: -0.04em;
-  color: var(--white);
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 1.125;
-  letter-spacing: -0.04em;
-  color: var(--white);
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.14286;
-  color: var(--white);
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  font-weight: var(--base-font-weight);
-  font-size: var(--base-font-size);
-  line-height: var(--base-line-height);
-  letter-spacing: var(--base-letter-spacing);
-  color: var(--white);
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  margin: 0;
-  padding: 20px;
-}
-
-section ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* #endregion */
-
-/* #region media queries for tablets */
-/* @media (min-width: 768px) {
-}
-/* #endregion */
-
-/* #region media queries for desktop */
-/* @media (min-width: 1280px) {
-}
-/* #endregion */
