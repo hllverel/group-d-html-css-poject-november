@@ -117,6 +117,12 @@ section ul {
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
   background: transparent;
+  opacity: 1;
+}
+
+/* Mobile ve tablet'te ikinci kartı gizle */
+.review-card:nth-child(2) {
+  display: none;
 }
 
 .review-header {
@@ -210,6 +216,11 @@ section ul {
     font-size: 16px;
     line-height: 1.25;
   }
+  
+  /* Tablet'te de ikinci kart gizli kalsın */
+  .review-card:nth-child(2) {
+    display: none;
+  }
 }
 /* #endregion */
 
@@ -223,11 +234,18 @@ section ul {
   .reviews-cards {
     flex-direction: row;
     gap: 20px;
+    width: 1240px;
+    height: 196px;
   }
   
   .review-card {
     width: 610px;
     height: 196px;
+  }
+  
+  /* Desktop'ta her iki kart da gözüksün */
+  .review-card:nth-child(2) {
+    display: block;
   }
 }
 
