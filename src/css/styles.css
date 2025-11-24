@@ -589,6 +589,7 @@ h2 span {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 30px;
   }
 
   .section-header p {
@@ -783,7 +784,11 @@ h2 span {
 
   .section-header p {
     max-width: 565px;
-    margin-left: 410px;
+  }
+
+  .section-header h2 {
+    margin-right: 410px;
+    flex-shrink: 0;
   }
   /* #endregion */
 
