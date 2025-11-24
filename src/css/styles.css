@@ -29,7 +29,6 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 h1 {
@@ -76,7 +75,7 @@ ul {
 
 section {
   margin: 0;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 section ul {
@@ -87,48 +86,49 @@ section ul {
 }
 /* #endregion */
 
-/* ===== REVIEWS SECTION - MOBILE FIRST ===== */
-.reviews {
-  padding: 40px 0;
-  background-color: var(--black);
+/* #region media queries for tablets */
+@media (min-width: 768px) {
 }
+/* #endregion */
 
-.reviews .container {
-  max-width: 100%;
+/* #region media queries for desktop */
+@media (min-width: 1280px) {
+}
+/* #endregion */
+/* Reviews Section */
+.reviews {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .reviews-title {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 1.125;
+  font-size: 48px;
+  line-height: 54px;
   letter-spacing: -0.04em;
   color: var(--white);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .reviews-cards {
+  width: 1240px;
   display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
 .review-card {
+  width: 610px;
+  height: 196px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
-  background: transparent;
-  opacity: 1;
-}
-
-/* Mobile ve tablet'te ikinci kartı gizle */
-.review-card:nth-child(2) {
-  display: none;
 }
 
 .review-header {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
@@ -138,11 +138,11 @@ section ul {
   align-items: center;
 }
 
-.user-avatar img {
-  border-radius: 50%;
+.user-avatar {
   width: 56px;
   height: 56px;
-  object-fit: cover;
+  border-radius: 100px;
+  background: #e0e0e0;
 }
 
 .user-details {
@@ -154,14 +154,14 @@ section ul {
 .user-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.4;
+  line-height: 28px;
   color: var(--white);
 }
 
 .user-role {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.285;
+  line-height: 18px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -169,92 +169,23 @@ section ul {
 .stars {
   display: flex;
   gap: 4px;
-  align-self: flex-start;
-}
-
-.star-icon {
-  width: 20px;
-  height: 20px;
 }
 
 .review-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.285;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: -0.02em;
   color: var(--white);
 }
-
-/* #region media queries for tablets */
-@media (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-  
-  .reviews {
-    padding: 50px 0;
-  }
-  
-  .reviews-title {
-    font-size: 48px;
-    line-height: 1.125;
-    margin-bottom: 50px;
-  }
-  
-  .review-header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0;
-  }
-  
-  .stars {
-    align-self: flex-start;
-  }
-  
-  .review-text {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-  
-  /* Tablet'te de ikinci kart gizli kalsın */
-  .review-card:nth-child(2) {
-    display: none;
-  }
+.star-icon {
+  width: 20px;
+  height: 20px;
+   fill: currentColor;
+}  
+.user-avatar img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
 }
-/* #endregion */
-
-/* #region media queries for desktop 1280px+ */
-@media (min-width: 1280px) {
-  .container {
-    padding: 0 15px;
-    max-width: 1240px;
-  }
-  
-  .reviews {
-    padding: 50px 0;
-  }
-  
-  .reviews-cards {
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-    max-width: 1240px;
-    height: 196px;
-    opacity: 1;
-    margin: 0 auto;
-  }
-  
-  .review-card {
-    width: calc(50% - 10px);
-    max-width: 610px;
-    height: 196px;
-  }
-  
-  /* Desktop'ta her iki kart da gözüksün */
-  .review-card:nth-child(2) {
-    display: block;
-  }
-}
-/* #endregion ```
-
