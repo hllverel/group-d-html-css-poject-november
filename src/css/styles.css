@@ -1,11 +1,7 @@
-.container {margin: 0 auto;
-width: 375px;
+.signupconteiner {margin: 0 auto;
 box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {padding: 0;
-margin: 0;
-}
 
 .singup {width: 335px;
 height: 523px;
@@ -166,22 +162,12 @@ outline: none;
              display: none;
         }
 
-@media (min-width: 768px) and (max-width: 1280px) {
-.container {width: 768px;   
+@media (min-width: 768px) {
+.signupconteiner {   
     margin: 0 auto;
         box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    padding: 0;
-    margin: 0;
-}
+
 .singup {
     width: 480px;
     height: 577px;
@@ -358,24 +344,13 @@ textarea::placeholder {
 .resimler {display: none;}
 }
 
-@media (min-width: 1280px) and (max-width: 1440px) {
-    .container {
-        width: 1280px;
+@media (min-width: 1280px) {
+    .signupconteiner {
         margin: 0 auto;
         box-sizing: border-box;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    ul {
-        padding: 0;
-        margin: 0;
-    }
+   
         .singup {display: flex;
             width: 1080px;
             height: 578px;
