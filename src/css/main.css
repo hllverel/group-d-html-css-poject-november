@@ -99,7 +99,7 @@ section ul {
   padding-top: 40px;
   position: relative;
   overflow: hidden;
-  min-height: 580px;
+  /*min-height: 580px;*/
 }
 
 .footer ul {
