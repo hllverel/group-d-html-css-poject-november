@@ -420,183 +420,189 @@ h2 span {
 }
 
 /* #endregion */
-  
+
 /* #region sign-up */
-.signupconteiner {margin: 0 auto;
-box-sizing: border-box;
+.signupconteiner {
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-
-.singup {width: 335px;
-height: 523px;
-padding-left:20px;
-padding-right: 20px;
-background-color: rgba(18, 18, 18, 1);
-
+.singup {
+  width: 335px;
+  height: 523px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(18, 18, 18, 1);
 }
-.singuph3A {background-color: rgba(18, 18, 18, 1);
-}
-
-.singuph3 {font-family: DM Sans;
-color: rgba(255, 255, 255, 1);
-font-style: normal; 
-font-weight: 500;
-font-size: 28px;
-height: 1.14px;
-letter-spacing: -0.04em;
-width: 93px;
+.singuph3A {
+  background-color: rgba(18, 18, 18, 1);
 }
 
-.singuph3 span {color: rgba(190, 166, 158, 1);
+.singuph3 {
+  font-family: DM Sans;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  height: 1.14px;
+  letter-spacing: -0.04em;
+  width: 93px;
 }
 
-.singupp {font-family: DM sans;
-color:rgba(255, 255, 255, 1);
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: -0.02em;
-padding-top: 52px;
-padding-right: 40px;
-height: 54px;
-background-color: rgba(18, 18, 18, 1);
+.singuph3 span {
+  color: rgba(190, 166, 158, 1);
 }
-.singupform {background-color: rgba(18, 18, 18, 1);
+
+.singupp {
+  font-family: DM sans;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  padding-top: 52px;
+  padding-right: 40px;
+  height: 54px;
+  background-color: rgba(18, 18, 18, 1);
+}
+.singupform {
+  background-color: rgba(18, 18, 18, 1);
 }
 .singupnameA {
   padding-top: 41px;
-}   
-
-.singupname input[type="text"]::placeholder {font-family: DM Sans;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-letter-spacing: 0.0em;
-color: rgba(255, 255, 255, 1);
-opacity: 0.70;
-
 }
 
-.singupname input[type="text"] {box-sizing: border-box;
-border: 1px solid rgba(255, 255, 255, 0.2);
-width: 335px;
-height: 46px;
-border-radius: 12px;
-background-color: rgba(18, 18, 18, 1);
-outline: none;
-color: rgba(255, 255, 255, 1);
-padding-left: 18px;
-font-size: 16px;
-line-height: 20px;
+.singupname input[type='text']::placeholder {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.7;
 }
 
-.singupemailA {padding-top: 8px;
-}   
-
-.singupemail input[type="email"]::placeholder {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.0em;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0.70; 
+.singupname input[type='text'] {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 335px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: rgba(18, 18, 18, 1);
+  outline: none;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.singupemail input[type="email"] {    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 335px;
-    height: 46px;
-    border-radius: 12px;
-    background-color: rgba(18, 18, 18, 1);
-    outline: none;
-    color: rgba(255, 255, 255, 1);
-    padding-left: 18px;
-        font-size: 16px;
-        line-height: 20px;
+.singupemailA {
+  padding-top: 8px;
 }
 
-.textarea {padding-top: 8px;
-    width: 335px;
-    height: 112px;
+.singupemail input[type='email']::placeholder {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.7;
 }
 
-.singuptextarea {width: 335px;
-    height: 112px;
-    background-color: rgba(18, 18, 18, 1);
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    outline: none;
-    border-radius: 12px;
-    resize: none;
-    outline: none;
-    color: rgba(255, 255, 255, 1);
-    padding-left: 18px;
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 14px;
+.singupemail input[type='email'] {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 335px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: rgba(18, 18, 18, 1);
+  outline: none;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-textarea::placeholder {font-family: DM Sans;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.0em;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0.70;
+.textarea {
+  padding-top: 8px;
+  width: 335px;
+  height: 112px;
 }
 
-.singupsend {padding-top: 40px;
-    width: 335px;
+.singuptextarea {
+  width: 335px;
+  height: 112px;
+  background-color: rgba(18, 18, 18, 1);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 14px;
 }
 
-.singupbutton {width: 335px;
-box-sizing: border-box;
-height: 48px;  
-border-radius: 12px;
-background-color: rgba(255, 255, 255, 1);
- font-weight: 700;
-font-size: 16px;
-color:rgba(18, 18, 18, 1);
-text-align: center;
-outline: none;
+textarea::placeholder {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.7;
 }
 
-.singupsonp1 {width: 335px;
-    height: 48px;
-    padding-top: 20px;
-    box-sizing: border-box;
+.singupsend {
+  padding-top: 40px;
+  width: 335px;
 }
 
-.singupsonp {font-family: DM Sans;
-    font-weight: 400;
-    font-size: 12px;
-    height: 16px;
-    letter-spacing: 0.00em;
-    color: rgba(255, 255, 255, 0.5);
-  
-.singupsonp span {text-decoration: underline;
+.singupbutton {
+  width: 335px;
+  box-sizing: border-box;
+  height: 48px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(18, 18, 18, 1);
+  text-align: center;
+  outline: none;
 }
-  
+
+.singupsonp1 {
+  width: 335px;
+  height: 48px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.singupsonp {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 12px;
+  height: 16px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.singupsonp span {
+  text-decoration: underline;
+}
+
 .resimler {
-    display: none;
+  display: none;
 }
 /* #endregion */
-  
-/* #region reviews */
-.reviews {
-  width: 100%;
-  margin: 0 auto;
-  padding: 50px 0;
-}
 
+/* #region reviews */
 .reviews-title {
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 54px;
-  letter-spacing: -0.04em;
-  color: var(--white);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .reviews-cards {
@@ -615,14 +621,14 @@ outline: none;
 .review-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 20px;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .user-info {
   display: flex;
   gap: 10px;
-  align-items: center;
 }
 
 .user-avatar {
@@ -639,10 +645,8 @@ outline: none;
 }
 
 .user-name {
-  font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  color: var(--white);
 }
 
 .user-role {
@@ -656,6 +660,8 @@ outline: none;
 .stars {
   display: flex;
   gap: 4px;
+  position: relative;
+  left: 65px;
 }
 
 .review-text {
@@ -679,20 +685,6 @@ outline: none;
   object-fit: cover;
 }
 
-.container {
-  padding: 0 20px;
-}
-
-.reviews {
-  padding: 30px 0;
-}
-
-.reviews-title {
-  font-size: 28px;
-  line-height: 32px;
-  margin-bottom: 30px;
-}
-
 .reviews-cards {
   flex-direction: column;
   gap: 16px;
@@ -708,13 +700,6 @@ outline: none;
 
 .review-card:last-child {
   display: none; /* ✅ 2. CARD'ı GİZLE */
-}
-
-.review-header {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 16px;
 }
 
 .stars {
@@ -741,7 +726,7 @@ outline: none;
   line-height: 18px;
 }
 /* #endregion */
-  
+
 /* #region media queries for tablets */
 @media (min-width: 768px) {
   section {
@@ -963,214 +948,204 @@ outline: none;
     margin-bottom: 4px;
   }
   /* #endregion */
-  
+
   /* #region tablet sign-up */
-    .signupconteiner {   
-        margin: 0 auto;
-            box-sizing: border-box;
-    }
-
-    .singup {
-        width: 480px;
-        height: 577px;
-        padding-left: 32px;
-        padding-right: 256px;
-        background-color: rgba(18, 18, 18, 1);
-    }
-  
-    .singuph3A {
-        background-color: rgba(18, 18, 18, 1);
-    }
-  
-    .singuph3 {
-        font-family: DM Sans;
-        color: rgba(255, 255, 255, 1);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 54px;
-        letter-spacing: -0.04em;
-        width: 159px;
-    }
-
-    .singuph3 span {
-        color: rgba(190, 166, 158, 1);
-    }
-
-    .singupp {width: 480px;
-        height: 40px;
-        font-family: DM sans;
-        color: rgba(255, 255, 255, 1);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: -0.02em;
-        padding-top: 74px;
-        padding-right: 256px;
-        background-color: rgba(18, 18, 18, 1);
-    }
-  
-    .singupform {
-        background-color: rgba(18, 18, 18, 1);
-    }
-
-    .singupnameA {
-        padding-top: 40px;
-    }
-  
-    .singupname input[type="text"]::placeholder {
-        font-family: DM Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.0em;
-        color: rgba(255, 255, 255, 1);
-        opacity: 0.70;
-    }
-
-    .singupname input[type="text"] {
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        width: 480px;
-        height: 60px;
-        border-radius: 12px;
-        background-color: rgba(18, 18, 18, 1);
-        outline: none;
-        color: rgba(255, 255, 255, 1);
-        padding-left: 18px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .singupemailA {
-        padding-top: 14px;
-    }
-
-    .singupemail input[type="email"]::placeholder {
-        font-family: DM Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.0em;
-        color: rgba(255, 255, 255, 1);
-        opacity: 0.70;
-    }
-  
-    .singupemail input[type="email"] {
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        width: 480px;
-        height: 60px;
-        border-radius: 12px;
-        background-color: rgba(18, 18, 18, 1);
-        outline: none;
-        color: rgba(255, 255, 255, 1);
-        padding-left: 18px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-  
-    .textarea {
-        padding-top: 14px;
-        width: 480px;
-        height: 119px;
-    }
-
-    .singuptextarea {
-        width: 480px;
-        height: 119px;
-        background-color: rgba(18, 18, 18, 1);
-        box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        outline: none;
-        border-radius: 12px;
-        resize: none;
-        outline: none;
-        color: rgba(255, 255, 255, 1);
-        padding-left: 18px;
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 14px;
-    }
-
-    textarea::placeholder {
-        font-family: DM Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.0em;
-        color: rgba(255, 255, 255, 1);
-        opacity: 0.70;
-
-    }
-
-    .singupsend {
-        padding-top: 40px;
-        width: 479px;
+  .signupconteiner {
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
-    .singupbutton {
-        width: 479px;
-        box-sizing: border-box;
-        height: 60px;
-        border-radius: 12px;
-        background-color: rgba(255, 255, 255, 1);
-        font-weight: 700;
-        font-size: 16px;
-        color: rgba(18, 18, 18, 1);
-        text-align: center;
-        outline: none;
-    }
-
-    .singupsonp1 {
-        width: 480px;
-        height: 36px;
-        padding-top: 20.71px;
-        box-sizing: border-box;
-    }
-
-    .singupsonp {width: 480px;
-        height: 36px;
-        font-family: DM Sans;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.00em;
-        color: rgba(255, 255, 255, 0.5);
-
-    }
-
-    .singupsonp span {
-        text-decoration: underline;
-    }
-    .resimler {display: none;}
-    }
-/* #endregion */
-  
-/* #region tablet reviews*/
-    .container {
-    padding: 0 32px;
+  .singup {
+    width: 480px;
+    height: 577px;
+    padding-left: 32px;
+    padding-right: 256px;
   }
 
-  .reviews {
-    padding: 40px 0;
+  .singuph3A {
+    background-color: rgba(18, 18, 18, 1);
   }
 
-  .reviews-title {
+  .singuph3 {
+    font-family: DM Sans;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-weight: 500;
     font-size: 48px;
     line-height: 54px;
-    margin-bottom: 40px;
+    letter-spacing: -0.04em;
+    width: 159px;
+  }
+
+  .singuph3 span {
+    color: rgba(190, 166, 158, 1);
+  }
+
+  .singupp {
+    width: 480px;
+    height: 40px;
+    font-family: DM sans;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    padding-top: 74px;
+    padding-right: 256px;
+    background-color: rgba(18, 18, 18, 1);
+  }
+
+  .singupform {
+    background-color: rgba(18, 18, 18, 1);
+  }
+
+  .singupnameA {
+    padding-top: 40px;
+  }
+
+  .singupname input[type='text']::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+  }
+
+  .singupname input[type='text'] {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 480px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .singupemailA {
+    padding-top: 14px;
+  }
+
+  .singupemail input[type='email']::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+  }
+
+  .singupemail input[type='email'] {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 480px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .textarea {
+    padding-top: 14px;
+    width: 480px;
+    height: 119px;
+  }
+
+  .singuptextarea {
+    width: 480px;
+    height: 119px;
+    background-color: rgba(18, 18, 18, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 14px;
+  }
+
+  textarea::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+  }
+
+  .singupsend {
+    padding-top: 40px;
+    width: 479px;
+  }
+
+  .singupbutton {
+    width: 479px;
+    box-sizing: border-box;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(18, 18, 18, 1);
+    text-align: center;
+    outline: none;
+  }
+
+  .singupsonp1 {
+    width: 480px;
+    height: 36px;
+    padding-top: 20.71px;
+    box-sizing: border-box;
+  }
+
+  .singupsonp {
+    width: 480px;
+    height: 36px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .singupsonp span {
+    text-decoration: underline;
+  }
+  .resimler {
+    display: none;
+  }
+  /* #endregion */
+
+  /* #region tablet reviews*/
+  .reviews-title {
+    margin-bottom: 50px;
   }
 
   .reviews-cards {
     flex-direction: column;
     gap: 16px;
+    margin: 0 32px;
+    max-width: 640px;
   }
 
   /* ✅ SADECE 1. CARD GÖSTER, 2. CARD'ı GİZLE */
   .review-card:first-child {
-    width: 100%;
-    height: auto;
     padding: 20px;
     display: block;
   }
@@ -1181,14 +1156,19 @@ outline: none;
 
   .review-header {
     justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+  }
+
+  .stars {
+    margin-top: 0;
+    position: initial;
   }
 
   .star-icon {
     width: 20px;
     height: 20px;
   }
-/* #endregion */
+  /* #endregion */
 }
 /* #endregion */
 
@@ -1352,233 +1332,224 @@ outline: none;
     flex-basis: initial;
   }
   /* #endregion */
-  
+
   /* #region desktop sign-up */
-    .singup {display: flex;
-            width: 1080px;
-            height: 578px;
-            padding-left: 100px;
-            padding-right: 100px;
-            background-color: rgba(18, 18, 18, 1);
-    
-        }
-     .singupa {width: 480px;
-        height: 578px;
-        }
-    
-        .singuph3A {
-            background-color: rgba(18, 18, 18, 1);
-        }
-    
-        .singuph3 {
-            font-family: DM Sans;
-            color: rgba(255, 255, 255, 1);
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 54px;
-            letter-spacing: -0.04em;
-            width: 159px;
-        }
-    
-        .singuph3 span {
-            color: rgba(190, 166, 158, 1);
-        }
-    
-        .singupp {
-            width: 480px;
-            height: 40px;
-            font-family: DM sans;
-            color: rgba(255, 255, 255, 1);
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: -0.02em;
-            padding-top: 74px;
-            padding-right: 256px;
-            background-color: rgba(18, 18, 18, 1);
-        }
-    
-        .singupform {
-            background-color: rgba(18, 18, 18, 1);
-        }
-    
-        .singupnameA {
-            padding-top: 40px;
-        }
-    
-        .singupname input[type="text"]::placeholder {
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.0em;
-            color: rgba(255, 255, 255, 1);
-            opacity: 0.70;
-        }
-    
-        .singupname input[type="text"] {
-            box-sizing: border-box;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            width: 480px;
-            height: 60px;
-            border-radius: 12px;
-            background-color: rgba(18, 18, 18, 1);
-            outline: none;
-            color: rgba(255, 255, 255, 1);
-            padding-left: 18px;
-            font-size: 16px;
-            line-height: 20px;
-        }
-    
-        .singupemailA {
-            padding-top: 14px;
-        }
-    
-        .singupemail input[type="email"]::placeholder {
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.0em;
-            color: rgba(255, 255, 255, 1);
-            opacity: 0.70;
-        }
-    
-        .singupemail input[type="email"] {
-            box-sizing: border-box;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            width: 480px;
-            height: 60px;
-            border-radius: 12px;
-            background-color: rgba(18, 18, 18, 1);
-            outline: none;
-            color: rgba(255, 255, 255, 1);
-            padding-left: 18px;
-            font-size: 16px;
-            line-height: 20px;
-        }
-    
-        .textarea {
-            padding-top: 14px;
-            width: 480px;
-            height: 120px;
-        }
-    
-        .singuptextarea {
-            width: 480px;
-            height: 120px;
-            background-color: rgba(18, 18, 18, 1);
-            box-sizing: border-box;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            outline: none;
-            border-radius: 12px;
-            resize: none;
-            outline: none;
-            color: rgba(255, 255, 255, 1);
-            padding-left: 18px; 
-            font-size: 16px;
-            line-height: 20px;
-            padding-top: 20.55px;
-        }
-    
-        textarea::placeholder {
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.0em;
-            color: rgba(255, 255, 255, 1);
-            opacity: 0.70;
-        }
-    
-        .singupsend {
-            padding-top: 40px;
-            width: 479px;
-        }
-    
-        .singupbutton {
-            width: 479px;
-            box-sizing: border-box;
-            height: 60px;
-            border-radius: 12px;
-            background-color: rgba(255, 255, 255, 1);
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 28px;
-            color: rgba(18, 18, 18, 1);
-            text-align: center;
-            outline: none;
-        }
-    
-        .singupsonp1 {
-            width: 480px;
-            height: 36px;
-            padding-top: 20px;
-            box-sizing: border-box;
-        }
-    
-        .singupsonp {
-            width: 480px;
-            height: 36px;
-            font-family: DM Sans;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            letter-spacing: 0.00em;
-            color: rgba(255, 255, 255, 0.5);
-    
-        }
-    
-        .singupsonp span {
-            text-decoration: underline;
-        }
-    
-     .resimler {
-             display: flex;
-             padding-left: 60px;
-             padding-bottom: 38px;
-             width: 540px;
-             height: 540px;
-             gap: 20px;
-        }
-
-        .ilkjpg {
-            width: 180px;
-                height: 288px;
-            border-radius: 1000px;
-            background-color: rgba(190, 166, 158, 1); 
-            justify-content: center;
-        }
-        .ilkjpg img {
-                padding-top: 76px;
-                padding-right: 19px;
-                max-width: 100%;
-                        }
-        .ikincijpg {width: 340px;
-            height: 540px;
-            display: flex;
-            border-radius: 1000px;
-                background-color: rgba(29, 29, 29, 1);
-        }
-        .ikincijpg img {
-            max-width: 100%;
-            padding-top: 156px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 88px;
-        }
-    /* #endregion */
-  .container {
-    padding: 0 100px;
+  .singup {
+    display: flex;
+    width: 1080px;
+    height: 578px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(18, 18, 18, 1);
+  }
+  .singupa {
+    width: 480px;
+    height: 578px;
   }
 
-  .reviews {
-    width: 100%; /* ✅ FIXED yerine responsive */
-    max-width: 1240px;
-    padding: 50px 0;
+  .singuph3A {
+    background-color: rgba(18, 18, 18, 1);
   }
 
+  .singuph3 {
+    font-family: DM Sans;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -0.04em;
+    width: 159px;
+  }
+
+  .singuph3 span {
+    color: rgba(190, 166, 158, 1);
+  }
+
+  .singupp {
+    width: 480px;
+    height: 40px;
+    font-family: DM sans;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    padding-top: 74px;
+    padding-right: 256px;
+    background-color: rgba(18, 18, 18, 1);
+  }
+
+  .singupform {
+    background-color: rgba(18, 18, 18, 1);
+  }
+
+  .singupnameA {
+    padding-top: 40px;
+  }
+
+  .singupname input[type='text']::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+  }
+
+  .singupname input[type='text'] {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 480px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .singupemailA {
+    padding-top: 14px;
+  }
+
+  .singupemail input[type='email']::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+  }
+
+  .singupemail input[type='email'] {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 480px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgba(18, 18, 18, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .textarea {
+    padding-top: 14px;
+    width: 480px;
+    height: 120px;
+  }
+
+  .singuptextarea {
+    width: 480px;
+    height: 120px;
+    background-color: rgba(18, 18, 18, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    border-radius: 12px;
+    resize: none;
+    outline: none;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 20.55px;
+  }
+
+  textarea::placeholder {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.7;
+  }
+
+  .singupsend {
+    padding-top: 40px;
+    width: 479px;
+  }
+
+  .singupbutton {
+    width: 479px;
+    box-sizing: border-box;
+    height: 60px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(18, 18, 18, 1);
+    text-align: center;
+    outline: none;
+  }
+
+  .singupsonp1 {
+    width: 480px;
+    height: 36px;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .singupsonp {
+    width: 480px;
+    height: 36px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .singupsonp span {
+    text-decoration: underline;
+  }
+
+  .resimler {
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 38px;
+    width: 540px;
+    height: 540px;
+    gap: 20px;
+  }
+
+  .ilkjpg {
+    width: 180px;
+    height: 288px;
+    border-radius: 1000px;
+    background-color: rgba(190, 166, 158, 1);
+    justify-content: center;
+  }
+  .ilkjpg img {
+    padding-top: 76px;
+    padding-right: 19px;
+    max-width: 100%;
+  }
+  .ikincijpg {
+    width: 340px;
+    height: 540px;
+    display: flex;
+    border-radius: 1000px;
+    background-color: rgba(29, 29, 29, 1);
+  }
+  .ikincijpg img {
+    max-width: 100%;
+    padding-top: 156px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 88px;
+  }
+  /* #endregion */
   .reviews-cards {
     width: 100%; /* ✅ FIXED yerine responsive */
     max-width: 1240px;
@@ -1596,7 +1567,7 @@ outline: none;
     display: block !important;
   }
   /* #region desktop reviews */
-  
+
   /* #endregion */
 }
 /* #endregion */
