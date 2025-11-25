@@ -3,12 +3,327 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Focus.Frame</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
   </head>
 
   <body>
-    <section class="signupconteiner" id="signup1A">
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <div class="header-border">
+            <a href="/" class="logo">
+              <div class="logo-icon-wrapper">
+                <svg class="logo-icon" width="123" height="16">
+                  <use href="images/symbol-defs.svg#icon-logo"></use>
+                </svg>
+              </div>
+            </a>
+            <div class="right-header">
+              <a class="camera-icon-wrapper" href="#signup1A">
+                <svg class="camera-icon" width="16" height="12">
+                  <use href="images/symbol-defs.svg#icon-camera"></use>
+                </svg>
+              </a>
+              <div class="menu-icon-wrapper">
+                <svg class="menu-icon" width="32" height="32">
+                  <use href="images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="menu-wrapper is-open">
+              <div class="menu-content">
+                <div class="close-icon-wrapper">
+                  <svg class="close-icon" width="32" height="32">
+                    <use href="images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </div>
+                <nav class="menu">
+                  <ul class="menu-list">
+                    <li class="list">
+                      <a href="#aboutUs" class="link">About us</a>
+                    </li>
+                    <li class="list">
+                      <a href="#ourCourses" class="link">Our courses</a>
+                    </li>
+                    <li class="list">
+                      <a href="#ourMentors" class="link">Our mentors</a>
+                    </li>
+                    <li class="list">
+                      <a href="#rewievs" class="link">Reviews</a>
+                    </li>
+                    <li class="list">
+                      <a href="#contacts" class="link">contacts</a>
+                    </li>
+                  </ul>
+                </nav>
+                <img
+                  class="menu-image"
+                  src="images/camera.png"
+                  alt="camera"
+                  srcset="images/camera.png 1x, images/camera@2p.png 2x"
+                />
+                <img
+                  class="menu-image-tablet"
+                  src="images/camera-tablet.jpg"
+                  alt="camera"
+                  srcset="
+                    images/camera-tablet.jpg    1x,
+                    images/camera-tablet@2p.jpg 2x
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <a href="#signup1A" class="signup-button">Sign up</a>
+        </div>
+      </header>
+      <main>
+        <div class="hero-bg">
+          <section class="hero" id="hero">
+            <div class="desktop-hero-left">
+              <h1>
+                Discover the magic of <span>photography</span> in our school
+              </h1>
+              <p>
+                Our photography school offers an unforgettable journey, where
+                you can learn the basics of composition, master technical
+                skills, translate your unique ideas.
+              </p>
+              <div class="hero-reviews">
+                <div class="happy-students">
+                  <div class="student-images">
+                    <img
+                      class="student1"
+                      srcset="images/student1.png 1x, images/student1@2.png 2x"
+                      src="images/student1.png"
+                      alt="student 1"
+                    />
+                    <img
+                      class="student2"
+                      srcset="images/student2.png 1x, images/student2@2.png 2x"
+                      src="images/student2.png"
+                      alt="student 2"
+                    />
+                    <img
+                      class="student3"
+                      srcset="images/student3.png 1x, images/student3@2.png 2x"
+                      src="images/student3.png"
+                      alt="student 3"
+                    />
+                  </div>
+                  <a href="#reviews" class="student-info">
+                    <p>Our happy students</p>
+                    <p class="arrow">→</p>
+                  </a>
+                </div>
+                <div class="review-count">
+                  <div class="star">
+                    <svg>
+                      <use href="images/symbol-defs.svg#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="review-text">
+                    <p id="reviews-text">Reviews</p>
+                    <p id="review-number">+1500</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img
+                class="hero-image-mobile"
+                srcset="
+                  images/hero-image-mobile.png   1x,
+                  images/hero-image-mobile@2.png 2x
+                "
+                src="images/hero-image-mobile.png"
+                alt="man holding camera"
+              />
+              <img
+                class="hero-image-tablet"
+                srcset="
+                  images/hero-image-tablet.png   1x,
+                  images/hero-image-tablet@2.png 2x
+                "
+                src="images/hero-image-tablet.png"
+                alt="man holding camera"
+              />
+              <img
+                class="hero-image-desktop"
+                srcset="
+                  images/hero-image-desktop.png   1x,
+                  images/hero-image-desktop@2.png 2x
+                "
+                src="images/hero-image-desktop.png"
+                alt="man holding camera"
+              />
+            </div>
+          </section>
+        </div>
+
+        <!-- OUR COURSES SECTION STARTS -->
+        <section class="courses-section" id="ourCourses">
+          <div class="section-header">
+            <h2>Our <span>Courses</span></h2>
+            <p>
+              At our photography school, we offer a variety of courses that
+              cover all aspects of this fascinating art. Regardless of your
+              experience or skill level, we have courses to suit your needs and
+              goals.
+            </p>
+          </div>
+
+          <ul class="courses-grid">
+            <li>
+              <div class="course-card">
+                <div class="course-item">
+                  <div class="course-number">O1</div>
+                  <div class="course-icon">
+                    <svg
+                      class="icon-ellipse"
+                      style="border-radius: 100%; fill: #1d1d1d"
+                    >
+                      <use href="images/symbol-defs.svg#icon-Ellipse-1"></use>
+                    </svg>
+                    <svg class="icon">
+                      <use
+                        href="images/symbol-defs.svg#icon-arrow-narrow-up-right"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="course-title">Basics of photography</h3>
+                <p class="course-description">
+                  During this course, you will be able to familiarize yourself
+                  with different types of cameras, learn the basics of
+                  composition.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <div class="course-item">
+                  <div class="course-number">O2</div>
+                  <div class="course-icon">
+                    <svg
+                      class="icon-ellipse"
+                      style="border-radius: 100%; fill: #1d1d1d"
+                    >
+                      <use href="images/symbol-defs.svg#icon-Ellipse-1"></use>
+                    </svg>
+                    <svg class="icon">
+                      <use
+                        href="images/symbol-defs.svg#icon-arrow-narrow-up-right"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="course-title">Landscape photography</h3>
+                <p class="course-description">
+                  In this course, you'll learn how to choose the right angles,
+                  frame landscapes, and create depth and perspective in your
+                  images.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+                <div class="course-item">
+                  <div class="course-number">O3</div>
+                  <div class="course-icon">
+                    <svg
+                      class="icon-ellipse"
+                      style="border-radius: 100%; fill: #1d1d1d"
+                    >
+                      <use href="images/symbol-defs.svg#icon-Ellipse-1"></use>
+                    </svg>
+                    <svg class="icon">
+                      <use
+                        href="images/symbol-defs.svg#icon-arrow-narrow-up-right"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="course-title">Portrait photography</h3>
+                <p class="course-description">
+                  During this course, you will learn to choose the right
+                  lighting, reproduce the mood and expressions on the faces of
+                  the models.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- OUR COURSES SECTION ENDS -->
+
+        <section class="our-mentors" id="ourMentors">
+          <h2>Our <span>Mentors</span></h2>
+          <ul class="mentor-cards">
+            <li class="mentor-card">
+              <img
+                srcset="
+                  images/emilia-smith.png   1x,
+                  images/emilia-smith@2.png 2x
+                "
+                src="images/emilia-smith.png"
+                alt="Emilia Smith"
+              />
+              <h3>Emilia Smith</h3>
+              <p>1.5 years of experience</p>
+            </li>
+            <li class="mentor-card">
+              <img
+                srcset="
+                  images/alex-lebedev.png   1x,
+                  images/alex-lebedev@2.png 2x
+                "
+                src="images/alex-lebedev.png"
+                alt="Alex Lebedev"
+              />
+              <h3>Alex Lebedev</h3>
+              <p>3.5 years of experience</p>
+            </li>
+            <li class="mentor-card">
+              <img
+                srcset="
+                  images/mia-dubrovska.png   1x,
+                  images/mia-dubrovska@2.png 2x
+                "
+                src="images/mia-dubrovska.png"
+                alt="Mia Dubrovska"
+              />
+              <h3>Mia Dubrovska</h3>
+              <p>2.0 years of experience</p>
+            </li>
+            <li class="mentor-card">
+              <img
+                srcset="
+                  images/eliot-kovalev.png   1x,
+                  images/eliot-kovalev@2.png 2x
+                "
+                src="images/eliot-kovalev.png"
+                alt="Eliot Kovalev"
+              />
+              <h3>Eliot Kovalev</h3>
+              <p>4.0 years of experience</p>
+            </li>
+          </ul>
+        </section>
+        <section class="signupconteiner" id="signup1A">
       <div class="singup">
         <div class="singupa">
           <div class="singuph3A">
@@ -91,5 +406,9 @@
         </div>
       </div>
     </section>
+        
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
