@@ -1111,6 +1111,7 @@ border: none;
              width: 540px;
              height: 540px;
              gap: 20px;
+             align-items: flex-end;
         }
 
         .ilkjpg {
@@ -1118,22 +1119,27 @@ border: none;
                 height: 288px;
             border-radius: 1000px;
             background-color: rgba(190, 166, 158, 1); 
-            justify-content: center;
+            
+           
         }
         .ilkjpg img {
-                
-                padding-right: 19px;
-                max-width: 100%;
+                width: 150px;
+                height: 142px;
+                top: 85px;
+                left: -10px;
+                position: relative;
                         }
         .ikincijpg {width: 340px;
             height: 540px;
             display: flex;
             border-radius: 1000px;
                 background-color: rgba(29, 29, 29, 1);
-                
+                align-items: center;
+                justify-content: center;
         }
         .ikincijpg img {
-max-width: 100%; 
+width: 240px;
+height: 296px;
         }
     /* #endregion */
 }
