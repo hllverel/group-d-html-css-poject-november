@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +20,74 @@
   <body>
     <div class="container">
       <header></header>
-      <main></main>
+      <main>
+        <div class="advertisement-marquee">
+          <svg
+            class="line-svg top-line"
+            viewBox="0 0 1440 1"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0.5H1440" stroke="white" stroke-opacity="0.2" />
+          </svg>
+
+          <div class="marquee__inner">
+            <p class="marquee__line">
+              Master <span class="white-head">your photography</span> skills
+              with us!
+            </p>
+            <p class="marquee__line">
+              Master <span class="white-head">your photography</span> skills
+              with us!
+            </p>
+          </div>
+
+          <svg
+            class="line-svg bottom-line"
+            viewBox="0 0 1440 1"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0.5H1440" stroke="white" stroke-opacity="0.2" />
+          </svg>
+        </div>
+        <section class="about-us" id="aboutUs">
+          <h2 class="about-us-title">
+            About
+            <span class="brown-head">Us</span>
+          </h2>
+          <div class="about-us-content">
+            <img
+              class="about-us-mobile"
+              src="./images/about-camera.png"
+              alt="camera"
+              srcset="
+                ./images/about-camera.png    1x,
+                ./images/about-camera@2p.png 2x
+              "
+            />
+            <div class="about-us-text">
+              <p>
+                Our photography school is designed to teach you everything you
+                need to know about this magical art. Regardless of your
+                experience or skill level, we offer a wide range of courses to
+                suit your needs and interests. Our teaching team consists of
+                experienced photographers who have many years of experience in
+                this field. They strive not only to share their knowledge, but
+                also to inspire you to develop and express your unique
+                creativity.
+              </p>
+              <p>
+                Our courses cover a wide range of topics, from the basics of
+                photography and equipment use to professional image processing
+                and creating impressive compositions. You will have the
+                opportunity to learn the technical aspects of photography,
+                discover your own style and develop your own visual language.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer></footer>
     </div>
   </body>

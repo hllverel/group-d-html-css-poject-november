@@ -12,6 +12,11 @@
 }
 
 /* #region general */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 ul {
   list-style-type: none;
   margin: 0 auto;
@@ -85,13 +90,148 @@ section ul {
   justify-content: center;
 }
 /* #endregion */
+/* region of advertisement */
+.advertisement-marquee {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 40px auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
 
+.marquee__inner {
+  display: flex;
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0 15px;
+  min-width: 100%;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: var(--base-letter-spacing);
+  color: var(--brown);
+  animation: marqueeLine 10s linear infinite;
+}
+
+.white-head {
+  color: var(--white);
+}
+
+@keyframes marqueeLine {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.line-svg {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+}
+
+.top-line {
+  top: 0;
+}
+
+.bottom-line {
+  bottom: 0;
+}
+/* endofregion*/
+/* region of about-us*/
+.about-us,
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-us{
+  align-items: flex-start;
+    justify-content: flex-start;
+  min-width: 335px;
+  width: calc(100% - 40px);
+  margin: 80px 20px;
+}
+.about-us-title{
+  margin: 0;
+  font-size: 28px;
+    line-height: 1.14286;
+}
+.brown-head{
+  color: var(--brown);
+}
+/* endregion*/
 /* #region media queries for tablets */
 @media (min-width: 768px) {
+  .marquee__line {
+    font-size: 40px;
+    line-height: 1.25;
+  }
+  .about-us {
+      width: calc(100% - 64px);
+        margin: 100px 32px;
+    gap: 50px;
+    min-width: 704px;
+  }
+  .about-us-content{
+    gap: 50px;
+  }
+  .about-us-title {
+    font-size: 48px;
+    line-height: 1.125;
+  }
+  .about-us img {
+    width: 704px;
+  }
+  .about-us-text {
+    gap: 40px;
+    flex-direction: row;
+    width: calc(100% - 104px);
+  }
+  .about-us-text p {
+    width: calc(100% - 40px);
+  }
 }
 /* #endregion */
 
 /* #region media queries for desktop */
 @media (min-width: 1280px) {
+  .marquee__line {
+    font-size: 59px;
+    line-height: 1.08475;
+  }
+  .about-us{
+    margin: 150px 100px;
+    width: calc(100% - 200px);
+  }
+  .about-us-content{
+    flex-direction: row;
+  }
+  .about-us-content img{
+    width: 260px;
+    min-width: 240px;
+    gap: calc(50px - (1440px - 100vw) * 0.0625);
+  }
+  .about-us-text{
+    width: calc(552px + (100vw - 1280px) * 0.4875);
+      max-width: 630px;
+      gap: calc(40px - (1440px - 100vw) * 0.125);
+  }
 }
 /* #endregion */
