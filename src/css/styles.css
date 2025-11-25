@@ -583,6 +583,165 @@ outline: none;
 }
 /* #endregion */
   
+/* #region reviews */
+.reviews {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.reviews-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  margin-bottom: 50px;
+}
+
+.reviews-cards {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.review-card {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 100px;
+  background: #e0e0e0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+.user-role {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.user-avatar img {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.reviews {
+  padding: 30px 0;
+}
+
+.reviews-title {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.reviews-cards {
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ✅ SADECE 1. CARD GÖSTER, 2. CARD'ı GİZLE */
+.review-card:first-child {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  display: block;
+}
+
+.review-card:last-child {
+  display: none; /* ✅ 2. CARD'ı GİZLE */
+}
+
+.review-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.stars {
+  align-self: flex-start;
+}
+
+.star-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.user-name {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.user-role {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 18px;
+}
+/* #endregion */
+  
 /* #region media queries for tablets */
 @media (min-width: 768px) {
   section {
@@ -986,7 +1145,50 @@ outline: none;
     }
     .resimler {display: none;}
     }
-/* #endregion */  
+/* #endregion */
+  
+/* #region tablet reviews*/
+    .container {
+    padding: 0 32px;
+  }
+
+  .reviews {
+    padding: 40px 0;
+  }
+
+  .reviews-title {
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 40px;
+  }
+
+  .reviews-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* ✅ SADECE 1. CARD GÖSTER, 2. CARD'ı GİZLE */
+  .review-card:first-child {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: block;
+  }
+
+  .review-card:last-child {
+    display: none; /* ✅ 2. CARD'ı GİZLE */
+  }
+
+  .review-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .star-icon {
+    width: 20px;
+    height: 20px;
+  }
+/* #endregion */
 }
 /* #endregion */
 
@@ -1367,5 +1569,34 @@ outline: none;
             padding-bottom: 88px;
         }
     /* #endregion */
+  .container {
+    padding: 0 100px;
+  }
+
+  .reviews {
+    width: 100%; /* ✅ FIXED yerine responsive */
+    max-width: 1240px;
+    padding: 50px 0;
+  }
+
+  .reviews-cards {
+    width: 100%; /* ✅ FIXED yerine responsive */
+    max-width: 1240px;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .review-card {
+    width: calc(50% - 10px); /* ✅ RESPONSIVE KÜÇÜLSÜN */
+    height: auto;
+    display: block !important;
+  }
+
+  .review-card:last-child {
+    display: block !important;
+  }
+  /* #region desktop reviews */
+  
+  /* #endregion */
 }
 /* #endregion */
