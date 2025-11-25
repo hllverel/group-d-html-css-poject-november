@@ -99,7 +99,7 @@ section ul {
   padding-top: 40px;
   position: relative;
   overflow: hidden;
-  min-height: 535px;
+  min-height: 580px;
 }
 
 .footer ul {
@@ -127,9 +127,9 @@ section ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 40px;
-  min-height: 380px;
+  gap: 30px;
+  margin-bottom: 10px;
+  min-height: 400px;
 }
 
 .footer-logo {
@@ -239,7 +239,9 @@ section ul {
   justify-content: space-between;
   align-items: flex-end;
   gap: 80px;
-  padding-top: 20px;
+  padding-top:3px
+  min-height:20px;
+  flex-wrap: wrap;
   
 }
 
@@ -265,7 +267,6 @@ section ul {
 
 .footer-copyright {
   font-size: 12px;
-
   line-height: 1.3;
   color: #fff;
   margin: inherit;
@@ -305,6 +306,7 @@ section ul {
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
+    min-height: auto;
   }
 
   .footer-contacts {
@@ -369,6 +371,7 @@ section ul {
   .footer-form {
     max-width: 540px;
   }
+  }
   /* TABLET FOOTER (768px - 1279px) */
   @media (min-width: 768px) and (max-width: 1279px) {
     .footer-bottom {
@@ -377,4 +380,3 @@ section ul {
       align-items: flex-start; /* alta yapışmasın, biraz yukarıda dursun */
     }
   }
-}
