@@ -29,6 +29,7 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 h1 {
@@ -75,7 +76,7 @@ ul {
 
 section {
   margin: 0;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 section ul {
@@ -86,18 +87,9 @@ section ul {
 }
 /* #endregion */
 
-/* #region media queries for tablets */
-@media (min-width: 768px) {
-}
-/* #endregion */
-
-/* #region media queries for desktop */
-@media (min-width: 1280px) {
-}
-/* #endregion */
 /* Reviews Section */
 .reviews {
-  width: 1240px;
+  width: 100%;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -112,14 +104,13 @@ section ul {
 }
 
 .reviews-cards {
-  width: 1240px;
+  width: 100%;
   display: flex;
   gap: 20px;
 }
 
 .review-card {
-  width: 610px;
-  height: 196px;
+  flex: 1;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
@@ -178,14 +169,157 @@ section ul {
   letter-spacing: -0.02em;
   color: var(--white);
 }
+
 .star-icon {
   width: 20px;
   height: 20px;
-   fill: currentColor;
-}  
+  fill: currentColor;
+}
+
 .user-avatar img {
   border-radius: 50%;
   width: 56px;
   height: 56px;
   object-fit: cover;
 }
+
+/* #region media queries for mobile */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .reviews {
+    padding: 30px 0;
+  }
+  
+  .reviews-title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .reviews-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* ✅ SADECE 1. CARD GÖSTER, 2. CARD'ı GİZLE */
+  .review-card:first-child {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: block;
+  }
+  
+  .review-card:last-child {
+    display: none; /* ✅ 2. CARD'ı GİZLE */
+  }
+  
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .stars {
+    align-self: flex-start;
+  }
+  
+  .star-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .user-role {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* #region media queries for tablets */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    padding: 0 32px;
+  }
+  
+  .reviews {
+    padding: 40px 0;
+  }
+  
+  .reviews-title {
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 40px;
+  }
+  
+  .reviews-cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* ✅ SADECE 1. CARD GÖSTER, 2. CARD'ı GİZLE */
+  .review-card:first-child {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: block;
+  }
+  
+  .review-card:last-child {
+    display: none; /* ✅ 2. CARD'ı GİZLE */
+  }
+  
+  .review-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .star-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* #region media queries for desktop */
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 100px;
+  }
+  
+  .reviews {
+    width: 100%; /* ✅ FIXED yerine responsive */
+    max-width: 1240px;
+    padding: 50px 0;
+  }
+  
+  .reviews-cards {
+    width: 100%; /* ✅ FIXED yerine responsive */
+    max-width: 1240px;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .review-card {
+    width: calc(50% - 10px); /* ✅ RESPONSIVE KÜÇÜLSÜN */
+    height: auto;
+    display: block !important;
+  }
+  
+  .review-card:last-child {
+    display: block !important;
+  }
+}
+/* #endregion */
