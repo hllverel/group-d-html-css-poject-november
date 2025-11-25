@@ -880,10 +880,9 @@ textarea::placeholder {
   justify-content: space-between;
   align-items: flex-end;
   gap: 80px;
-  padding-top:3px
-  min-height:20px;
+  padding-top: 3px;
+  min-height: 20px;
   flex-wrap: wrap;
-  
 }
 
 .footer-policy {
@@ -1369,9 +1368,9 @@ textarea::placeholder {
     height: 20px;
   }
   /* #endregion */
-  
+
   /* region tablet footer */
-    .footer {
+  .footer {
     background-size: 720px auto;
   }
   .footer-container {
@@ -1386,7 +1385,7 @@ textarea::placeholder {
   .footer-top {
     background-color: transparent;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
@@ -1423,12 +1422,12 @@ textarea::placeholder {
     justify-content: space-between;
     align-items: flex-end;
   }
-  
+
   .footer-bottom {
     padding-top: 10px; /* 20px yerine daha az boşluk */
     gap: 0; /* elemanlar arasındaki dikey boşluğu da kısıyoruz */
     align-items: flex-start; /* alta yapışmasın, biraz yukarıda dursun */
-    }
+  }
   /* endregion */
 }
 /* #endregion */
@@ -1811,8 +1810,8 @@ textarea::placeholder {
     padding-bottom: 88px;
   }
   /* #endregion */
-  
-    /* #region desktop reviews */
+
+  /* #region desktop reviews */
   .reviews-cards {
     width: 100%; /* ✅ FIXED yerine responsive */
     max-width: 1240px;
@@ -1830,11 +1829,17 @@ textarea::placeholder {
     display: block !important;
   }
   /* #endregion */
-  
+
   /* region desktop footer */
-    .footer {
+  .footer {
     background-size: 1440px auto;
   }
+
+  .footer-container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .footer-top {
     flex-wrap: nowrap;
     gap: 80px;
