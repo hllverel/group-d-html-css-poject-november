@@ -187,7 +187,7 @@ header {
 /* #region hero */
 .hero-bg {
   background: url('../images/background.png') repeat top center;
-  padding: 20px 20px 80px 20px;
+  padding: 0 20px 80px 20px;
 }
 
 .hero {
@@ -297,12 +297,12 @@ h1 span {
 }
 /* #endregion */
 
-/* region of advertisement */
+/* #region advertisement */
 .advertisement-marquee {
   position: relative;
   width: 100%;
   max-width: 1440px;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -355,9 +355,9 @@ h1 span {
 .bottom-line {
   bottom: 0;
 }
-/* endofregion*/
+/* endregion */
 
-/* region of about-us*/
+/* region about-us*/
 .about-us,
 .about-us-content {
   display: flex;
@@ -365,21 +365,28 @@ h1 span {
   gap: 40px;
   width: 100%;
 }
+
 .about-us-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .about-us {
   align-items: flex-start;
   justify-content: flex-start;
-  width: 335px;
+  max-width: 1240px;
+  margin: 80px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
 .about-us-title {
   margin: 0;
   font-size: 28px;
   line-height: 1.14286;
 }
+
 .brown-head {
   color: var(--brown);
 }
@@ -438,13 +445,13 @@ h1 span {
   right: 26px;
   width: 32px;
   height: 32px;
-  opacity: 0.6;
+  border-radius: 50%;
+  background-color: rgba(29, 29, 29, 0.4);
 }
 
 .course-icon svg {
   width: 100%;
   height: 100%;
-  fill: #8b7355;
   position: absolute;
 }
 
@@ -454,6 +461,17 @@ h1 span {
   right: 6px;
   width: 20px;
   height: 20px;
+  stroke: rgba(255, 255, 255, 0.4);
+}
+
+.course-icon:hover,
+.course-icon:active {
+  background-color: var(--brown);
+}
+
+.course-icon:hover svg.icon,
+.course-icon:active svg.icon {
+  stroke: rgba(255, 255, 255, 1);
 }
 
 .course-title {
@@ -510,26 +528,23 @@ h2 span {
 /* #endregion */
 
 /* #region sign-up */
-.singup {
-  width: 335px;
-  height: 523px;
-}
-
-.singuph2 span {
-  color: rgba(190, 166, 158, 1);
-}
-
 .singuph3 {
   margin-bottom: 20px;
 }
+
 .singupnameA {
   padding-top: 41px;
 }
+
 .singupp {
   width: 295px;
 }
 
-.singupname input[type='text']::placeholder {
+.singupform {
+  width: 480px;
+}
+
+.si .singupname input[type='text']::placeholder {
   font-family: DM Sans;
   font-weight: 400;
   font-size: 14px;
@@ -578,7 +593,6 @@ h2 span {
 .textarea {
   padding-top: 8px;
   width: 335px;
-  height: 112px;
 }
 
 .singuptextarea {
@@ -629,14 +643,12 @@ textarea::placeholder {
 
 .singupsonp1 {
   width: 335px;
-  height: 48px;
   padding-top: 20px;
   box-sizing: border-box;
 }
 
 .singupsonp {
   font-size: 12px;
-  height: 16px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -782,14 +794,14 @@ textarea::placeholder {
   background-color: #000;
   background-repeat: repeat-y;
   overflow: hidden;
-  background: url('../images/graphic.png');
+  background: url('../images/background.png');
   background-size: 133% auto;
   background-position: top center;
   padding-bottom: 40px;
   padding-top: 40px;
   position: relative;
   overflow: hidden;
-  /*min-height: 580px;*/
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer ul {
@@ -877,6 +889,7 @@ textarea::placeholder {
 .footer-link:focus {
   opacity: 1;
 }
+/* endregion */
 
 /* EMAIL AND GO BUTTON */
 .footer-form {
@@ -980,7 +993,7 @@ textarea::placeholder {
   section {
     margin: 100px 32px;
   }
-  
+
   /* #region tablet header */
   .header-container {
     margin: 0 auto;
@@ -1055,7 +1068,7 @@ textarea::placeholder {
 
   /* #region tablet hero */
   .hero-bg {
-    padding: 40px 32px 100px 32px;
+    padding: 0 32px 100px 32px;
   }
 
   .hero {
@@ -1125,34 +1138,40 @@ textarea::placeholder {
     display: none;
   }
   /* #endregion */
-  
+
   /* #region tablet advertisement and about us */
   .marquee__line {
     font-size: 40px;
     line-height: 1.25;
   }
+
   .about-us {
-    width: calc(100% - 64px);
+    margin: 100px auto;
+    padding: 0 32px;
     gap: 50px;
-    min-width: 704px;
   }
+
   .about-us-content {
     gap: 50px;
   }
+
   .about-us-title {
     font-size: 48px;
     line-height: 1.125;
   }
+
   .about-us img {
-    width: 704px;
+    width: 100%;
   }
+
   .about-us-text {
     gap: 40px;
     flex-direction: row;
     width: 600px;
   }
+
   .about-us-text p {
-    width: 280px;
+    flex: 1;
   }
   /* #endregion */
 
@@ -1161,7 +1180,6 @@ textarea::placeholder {
     position: absolute;
     top: 30px;
     right: 30px;
-    opacity: 0.6;
   }
 
   .course-card {
@@ -1217,7 +1235,7 @@ textarea::placeholder {
   .mentor-card {
     width: 194px;
     height: 250px;
-    flex-basis: calc((100% - 100px) / 2); 
+    flex-basis: calc((100% - 100px) / 2);
   }
 
   .mentor-card h3 {
@@ -1270,7 +1288,6 @@ textarea::placeholder {
   .textarea {
     padding-top: 14px;
     width: 480px;
-    height: 119px;
   }
 
   .singuptextarea {
@@ -1298,7 +1315,6 @@ textarea::placeholder {
 
   .singupsonp1 {
     width: 480px;
-    height: 36px;
     padding-top: 20.71px;
   }
 
@@ -1492,7 +1508,7 @@ textarea::placeholder {
 
   /* #region desktop hero */
   .hero-bg {
-    padding: 80px 100px 150px 100px;
+    padding: 60px 100px 150px 100px;
   }
 
   .hero {
@@ -1530,25 +1546,37 @@ textarea::placeholder {
     display: none;
   }
   /* #endregion */
-  
+
   /* #region desktop advertisement and about us */
   .marquee__line {
     font-size: 59px;
     line-height: 1.08475;
   }
+
   .about-us {
-    width: calc(100% - 200px);
+    padding: 0 100px;
+    margin: 150px auto;
+    max-width: 1440px;
+    width: 100%;
   }
+
   .about-us-content {
     flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
   }
+
   .about-us-content img {
     width: clamp(488px, calc(-88px + 45vw), 560px);
   }
+
   .about-us-text {
-    width: calc(552px + (100vw - 1280px) * 0.4875);
-    max-width: 630px;
-    gap: calc(40px - (1440px - 100vw) * 0.125);
+    /* 1280px'de 552px, 1440px'de 630px */
+    width: clamp(552px, 552px + (100vw - 1280px) * 0.4875, 630px);
+    height: 260px;
+    gap: 20px;
+    flex-shrink: 0;
   }
   /* endregion*/
 
@@ -1598,6 +1626,7 @@ textarea::placeholder {
   /* #region desktop sign-up */
   .singup {
     display: flex;
+    justify-content: space-between;
   }
 
   .singuph3 {
@@ -1635,7 +1664,7 @@ textarea::placeholder {
   .textarea {
     padding-top: 14px;
     width: 480px;
-    height: 120px;
+    height: 100%;
   }
 
   .singuptextarea {
@@ -1663,7 +1692,6 @@ textarea::placeholder {
 
   .singupsonp1 {
     width: 480px;
-    height: 36px;
   }
 
   .singupsonp {
@@ -1676,8 +1704,6 @@ textarea::placeholder {
 
   .resimler {
     display: flex;
-    padding-left: 60px;
-    padding-bottom: 38px;
     width: 540px;
     height: 540px;
     gap: 20px;

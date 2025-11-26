@@ -60,7 +60,7 @@
                       <a href="#ourMentors" class="link">Our mentors</a>
                     </li>
                     <li class="list">
-                      <a href="#rewievs" class="link">Reviews</a>
+                      <a href="#revievs" class="link">Reviews</a>
                     </li>
                     <li class="list">
                       <a href="#contacts" class="link">contacts</a>
@@ -172,15 +172,10 @@
             </div>
           </section>
         </div>
-        
-                <div class="advertisement-marquee">
-          <svg
-            class="line-svg top-line"
-            viewBox="0 0 1440 1"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0.5H1440" stroke="white" stroke-opacity="0.2" />
+
+        <div class="advertisement-marquee">
+          <svg class="line-svg top-line">
+            <use href="images/symbol-defs.svg#icon-line"></use>
           </svg>
 
           <div class="marquee__inner">
@@ -194,15 +189,11 @@
             </p>
           </div>
 
-          <svg
-            class="line-svg bottom-line"
-            viewBox="0 0 1440 1"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0 0.5H1440" stroke="white" stroke-opacity="0.2" />
+          <svg class="line-svg bottom-line">
+            <use href="images/symbol-defs.svg#icon-line"></use>
           </svg>
         </div>
+
         <section class="about-us" id="aboutUs">
           <h2 class="about-us-title">
             About
@@ -258,12 +249,6 @@
                 <div class="course-item">
                   <div class="course-number">O1</div>
                   <div class="course-icon">
-                    <svg
-                      class="icon-ellipse"
-                      style="border-radius: 100%; fill: #1d1d1d"
-                    >
-                      <use href="images/symbol-defs.svg#icon-Ellipse-1"></use>
-                    </svg>
                     <svg class="icon">
                       <use
                         href="images/symbol-defs.svg#icon-arrow-narrow-up-right"
@@ -285,12 +270,6 @@
                 <div class="course-item">
                   <div class="course-number">O2</div>
                   <div class="course-icon">
-                    <svg
-                      class="icon-ellipse"
-                      style="border-radius: 100%; fill: #1d1d1d"
-                    >
-                      <use href="images/symbol-defs.svg#icon-Ellipse-1"></use>
-                    </svg>
                     <svg class="icon">
                       <use
                         href="images/symbol-defs.svg#icon-arrow-narrow-up-right"
@@ -312,12 +291,6 @@
                 <div class="course-item">
                   <div class="course-number">O3</div>
                   <div class="course-icon">
-                    <svg
-                      class="icon-ellipse"
-                      style="border-radius: 100%; fill: #1d1d1d"
-                    >
-                      <use href="images/symbol-defs.svg#icon-Ellipse-1"></use>
-                    </svg>
                     <svg class="icon">
                       <use
                         href="images/symbol-defs.svg#icon-arrow-narrow-up-right"
@@ -390,6 +363,7 @@
             </li>
           </ul>
         </section>
+
         <section class="signupconteiner" id="signup1A">
           <div class="singup">
             <div class="singupa">
@@ -436,7 +410,7 @@
                 </div>
                 <div class="singupsonp1">
                   <p class="singupsonp">
-                    By clicking on “Send” button, you agree to our
+                    By clicking on "Send" button, you agree to our
                     <span>Privacy Policy</span>,<br />
                     and allow Promodo to use this information for marketing
                     purposes.
@@ -447,11 +421,7 @@
             <div class="resimler">
               <div class="ilkjpg">
                 <img
-                  srcset="
-                    images/lens1xasli.png 1x,
-                    images/lens@2x.png    2x,
-                    images/lens@4x.png    4x
-                  "
+                  srcset="images/lens1xasli.png 1x, images/lens@2x.png 2x"
                   src="images/lens1xasli.png"
                   alt="ilkresim"
                   width="150"
@@ -460,11 +430,7 @@
               </div>
               <div class="ikincijpg">
                 <img
-                  srcset="
-                    images/fotomak1x.png  1x,
-                    images/fotomak@2x.png 2x,
-                    images/fotomak@4x.png 4x
-                  "
+                  srcset="images/fotomak1x.png 1x, images/fotomak@2x.png 2x"
                   src="images/fotomak1x.png"
                   alt="ikinciresim"
                   width="240"
@@ -476,7 +442,7 @@
         </section>
 
         <!-- Reviews Section -->
-        <section class="reviews">
+        <section class="reviews" id="revievs">
           <h2 class="reviews-title">Reviews</h2>
           <div class="reviews-cards">
             <!-- Card 1 - Abraham Baker -->
@@ -571,7 +537,7 @@
           </div>
         </section>
       </main>
-              
+
       <footer class="footer" id="contacts">
         <div class="container footer-container">
           <!-- üst blok -->
@@ -650,14 +616,6 @@
               </label>
               <button class="footer-btn" type="submit">Go</button>
             </form>
-          </div>
-          <!-- graphic.png -->
-          <div class="footer-graphic-container">
-            <img
-              src="./images/graphic.png"
-              alt="Focus Frame Design"
-              class="footer-graphic"
-            />
           </div>
           <!--ALT KISIM (privacylink and copyrightkısmı)-->
           <div class="footer-bottom">
