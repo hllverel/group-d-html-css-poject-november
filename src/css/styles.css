@@ -85,7 +85,7 @@ section ul {
 /* #region header */
 header {
   padding: 20px;
-  background: var(--black) url('../images/background.png') no-repeat top center;
+  background: var(--black) url('../images/background.webp') no-repeat top center;
 }
 
 .header-border {
@@ -186,7 +186,7 @@ header {
 
 /* #region hero */
 .hero-bg {
-  background: url('../images/background.png') repeat top center;
+  background: url('../images/background.webp') repeat top center;
   padding: 0 20px 80px 20px;
 }
 
@@ -794,7 +794,7 @@ textarea::placeholder {
   background-color: #000;
   background-repeat: repeat-y;
   overflow: hidden;
-  background: url('../images/background.png');
+  background: url('../images/background.webp');
   background-size: 133% auto;
   background-position: top center;
   padding-bottom: 40px;
@@ -1710,20 +1710,20 @@ textarea::placeholder {
     align-items: flex-end;
   }
 
-  .ilkjpg {
+  .ilkwebp {
     width: 180px;
     height: 288px;
     border-radius: 1000px;
     background-color: rgba(190, 166, 158, 1);
   }
-  .ilkjpg img {
+  .ilkwebp img {
     width: 150px;
     height: 142px;
     top: 85px;
     left: -10px;
     position: relative;
   }
-  .ikincijpg {
+  .ikinciwebp {
     width: 340px;
     height: 540px;
     display: flex;
@@ -1732,7 +1732,7 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
   }
-  .ikincijpg img {
+  .ikinciwebp img {
     width: 240px;
     height: 296px;
   }
