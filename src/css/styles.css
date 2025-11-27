@@ -676,6 +676,7 @@ textarea::placeholder {
   width: 100%;
   display: flex;
   gap: 20px;
+  align-items: initial;
 }
 
 .review-card {
@@ -806,7 +807,6 @@ textarea::placeholder {
   padding-bottom: 40px;
   padding-top: 40px;
   position: relative;
-  overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
