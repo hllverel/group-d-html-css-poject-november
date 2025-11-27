@@ -544,7 +544,7 @@ h2 span {
   width: 480px;
 }
 
-.si .singupname input[type='text']::placeholder {
+.singupname input[type='text']::placeholder {
   font-family: DM Sans;
   font-weight: 400;
   font-size: 14px;
@@ -639,6 +639,12 @@ textarea::placeholder {
   text-align: center;
   outline: none;
   border: none;
+}
+
+.singupbutton:active,
+.singupbutton:hover {
+  background-color: var(--dark-grey);
+  color: var(--brown);
 }
 
 .singupsonp1 {
