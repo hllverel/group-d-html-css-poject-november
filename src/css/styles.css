@@ -83,11 +83,6 @@ section ul {
 /* #endregion */
 
 /* #region header */
-header {
-  padding: 20px;
-  background: var(--black) url('../images/background.webp') no-repeat top center;
-}
-
 .header-border {
   margin: 0 auto;
   background-color: var(--black);
@@ -187,14 +182,14 @@ header {
 /* #region hero */
 .hero-bg {
   background: url('../images/background.webp') repeat top center;
-  padding: 0 20px 80px 20px;
+  padding: 20px 20px 80px 20px;
 }
 
 .hero {
   background-color: var(--dark-grey);
   border-radius: 30px;
   padding: 40px 20px 0 20px;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 
 h1 {
@@ -1034,7 +1029,7 @@ textarea::placeholder {
 
   header {
     display: flex;
-    padding: 20px 32px 40px 32px;
+    padding-top: 20px;
   }
 
   .header-border {
@@ -1079,6 +1074,7 @@ textarea::placeholder {
 
   .hero {
     padding: 64px 32px 0 32px;
+    margin: 40px 0 0 0;
   }
 
   h1 {
@@ -1514,11 +1510,12 @@ textarea::placeholder {
 
   /* #region desktop hero */
   .hero-bg {
-    padding: 60px 100px 150px 100px;
+    padding: 0 100px 150px 100px;
   }
 
   .hero {
     padding: 80px 50px 0 50px;
+    margin: 80px 0 0 0;
     display: flex;
     gap: clamp(20px, calc(-860px + 68.75vw), 130px);
   }
